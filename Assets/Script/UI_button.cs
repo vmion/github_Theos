@@ -14,4 +14,10 @@ public class UI_button : MonoBehaviour
     {
         ui.SetActive(true);
     }
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("quit");
+
+    }
 }

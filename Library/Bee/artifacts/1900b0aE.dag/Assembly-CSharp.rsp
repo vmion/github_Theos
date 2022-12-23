@@ -359,6 +359,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/Character/Char_ani.cs"
 "Assets/Script/Character/Char_bounds.cs"
+"Assets/Script/Object/Obj_teleport.cs"
 "Assets/Script/UI/UI_button.cs"
 "Assets/Script/UI/UI_fillamount.cs"
 "Assets/Script/UI/UI_Inventory.cs"

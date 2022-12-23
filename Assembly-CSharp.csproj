@@ -56,15 +56,16 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Character\Char_bounds.cs" />
     <Compile Include="Assets\Script\UI\UI_Inventory.cs" />
     <Compile Include="Assets\Script\UI\UI_skill.cs" />
+    <Compile Include="Assets\Script\Character\Char_ani.cs" />
     <Compile Include="Assets\Script\UI\UI_fillamount.cs" />
     <Compile Include="Assets\Script\UI\UI_joyStick.cs" />
     <Compile Include="Assets\Script\UI\UI_InventorySlot.cs" />
-    <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Character\Char_ani.cs" />
-    <Compile Include="Assets\Script\Character\Char_bounds.cs" />
     <Compile Include="Assets\Script\UI\UI_minimap.cs" />
+    <Compile Include="Assets\Script\UI\UI_button.cs" />
+    <Compile Include="Assets\Script\Object\Obj_teleport.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

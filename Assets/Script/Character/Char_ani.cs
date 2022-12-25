@@ -20,6 +20,16 @@ public class Char_ani :  MonoBehaviour
     Vector2 LCcenterPos;
     public Image Rotate_Camera;
     public Image Camera_Lever;
+    [SerializeField]
+    private Image Skill_1;
+    [SerializeField]
+    private Image Skill_2;
+    [SerializeField]
+    private Image Skill_3;
+    [SerializeField]
+    private Image Skill_4;
+    [SerializeField]
+    private Image Portion;    
     void Start()
     {
         ani = Char.GetComponent<Animator>();        
@@ -27,6 +37,7 @@ public class Char_ani :  MonoBehaviour
         moveSpeed = 3f;
         centerPos = JoyStick.rectTransform.position;
         CcenterPos = Rotate_Camera.rectTransform.position;
+        ani.SetInteger("ani", 0);
     }
     public void Move()
     {
@@ -75,10 +86,95 @@ public class Char_ani :  MonoBehaviour
             x = Mathf.Clamp(x, 335f, 361f);
         }
         Cam.rotation = Quaternion.Euler(x, camAngle.y + rotateInput.x, camAngle.z);
-    }    
+    }
+    public void ButtonSkill()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if(Skill_1.fillAmount == 1)
+            {                
+                StartCoroutine(CoolTime(Skill_1, 1));
+                ani.SetInteger("ani", 1);             
+            }
+            else
+            {
+                Debug.Log("쿨타임입니다.");                
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (Skill_2.fillAmount == 1)
+            {
+                StartCoroutine(CoolTime(Skill_2, 3));
+                ani.SetInteger("ani", 2);
+            }
+            else
+            {
+                Debug.Log("쿨타임입니다.");
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (Skill_3.fillAmount == 1)
+            {
+                StartCoroutine(CoolTime(Skill_3, 5));
+                ani.SetInteger("ani", 3);
+            }
+            else
+            {
+                Debug.Log("쿨타임입니다.");
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            if (Skill_4.fillAmount == 1)
+            {
+                StartCoroutine(CoolTime(Skill_4, 8));
+                ani.SetInteger("ani", 4);
+            }
+            else
+            {
+                Debug.Log("쿨타임입니다.");
+            }
+        }
+    }
+    public void ButtonPortion()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            if (Portion.fillAmount == 1 && hp.fillAmount != 1)
+            {
+                hp.fillAmount += 0.2f;
+                StartCoroutine(CoolTime(Portion, 10));
+            }
+            else
+            {
+                Debug.Log("쿨타임입니다.");
+            }
+            if(hp.fillAmount == 1)
+            {
+                Debug.Log("HP가 가득 차 있습니다.");
+            }
+        }
+    }
+    public void AfterDelay()
+    {
+        ani.SetInteger("ani", 0);
+    }
+    IEnumerator CoolTime(Image _image, float cool)
+    {
+        while(cool > 1.0f)
+        {
+            cool -= Time.deltaTime;
+            _image.fillAmount = (1.0f / cool);
+            yield return new WaitForFixedUpdate();
+        }
+    }
     void Update()
     {
         LookAround();
-        Move();        
+        Move();
+        ButtonSkill();
+        ButtonPortion();
     }
 }

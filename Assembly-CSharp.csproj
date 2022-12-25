@@ -66,6 +66,8 @@
     <Compile Include="Assets\Script\UI\UI_InventorySlot.cs" />
     <Compile Include="Assets\Script\UI\UI_minimap.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
+    <Compile Include="Assets\Script\Manager\NPC_Manager.cs" />
+    <Compile Include="Assets\Script\Manager\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

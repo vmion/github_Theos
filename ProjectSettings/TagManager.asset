@@ -8,6 +8,7 @@ TagManager:
   - UI
   - Building
   - Warp
+  - NPC
   layers:
   - Default
   - TransparentFX

@@ -361,6 +361,8 @@
 "Assets/Script/Character/Char_bounds.cs"
 "Assets/Script/Manager/GameManager.cs"
 "Assets/Script/Manager/NPC_Manager.cs"
+"Assets/Script/Npc/Npc_Panel.cs"
+"Assets/Script/Npc/Npc_Text.cs"
 "Assets/Script/Object/Obj_teleport.cs"
 "Assets/Script/UI/UI_button.cs"
 "Assets/Script/UI/UI_fillamount.cs"

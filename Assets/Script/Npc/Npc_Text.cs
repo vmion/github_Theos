@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.IO;
+using System.IO;
 
 public class Npc_Text : MonoBehaviour
 {    
@@ -14,12 +14,19 @@ public class Npc_Text : MonoBehaviour
         dialog.text = "";
         if(panel.activeSelf == true)
         {
-            //TextAsset txt = Resources.Load<TextAsset>("Script_" + npc.name);
-            TextAsset txt = Resources.Load<TextAsset>("Script_Chief");
-            string[] arrData = txt.text.Split(',');
-            foreach (string one in arrData)
+            string path = Application.dataPath + "/Resources/Dialog/" + "Script_" + npc.name +".csv";
+            using (StreamReader sr = new StreamReader(path))
             {
-                dialog.text += one;         
+                string lineData = string.Empty;
+                while ((lineData = sr.ReadLine()) != null)
+                {
+                    string[] datas = lineData.Split(',');
+                    for(int i = 0; i < datas.Length; i++)
+                    {
+                        dialog.text = datas[i];                        
+                    }
+                }
+                sr.Close();
             }
         }
        

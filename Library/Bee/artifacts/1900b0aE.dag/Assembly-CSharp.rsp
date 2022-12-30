@@ -360,7 +360,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/Character/Char_ani.cs"
-"Assets/Script/Character/Char_bounds.cs"
 "Assets/Script/Manager/GameManager.cs"
 "Assets/Script/Manager/LoadingManager.cs"
 "Assets/Script/Manager/UI_Manager.cs"
@@ -378,7 +377,6 @@
 "Assets/Script/UI/UI_joyStick.cs"
 "Assets/Script/UI/UI_Loading.cs"
 "Assets/Script/UI/UI_minimap.cs"
-"Assets/Script/UI/UI_Singleton.cs"
 "Assets/Script/UI/UI_skill.cs"
 "Assets/Script/UI/UI_Start.cs"
 -langversion:9.0

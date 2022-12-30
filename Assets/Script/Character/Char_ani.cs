@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Char_ani :  MonoBehaviour
-{    
+{
+    private static Char_ani Instance;
     [SerializeField]
     private Transform Char;
     [SerializeField]
@@ -29,11 +30,24 @@ public class Char_ani :  MonoBehaviour
     [SerializeField]
     private Image Skill_4;
     [SerializeField]
-    private Image Portion;    
-    void Start()
+    private Image Portion;
+    public void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.transform.root.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    void Start()
+    {        
         ani = Char.GetComponent<Animator>();        
         Char.parent.gameObject.transform.position = new Vector3(-15f, 0, 0);
+        Char.parent.gameObject.transform.rotation = Quaternion.Euler(0, 90f, 0);
         moveSpeed = 3f;
         centerPos = JoyStick.rectTransform.position;
         CcenterPos = Rotate_Camera.rectTransform.position;

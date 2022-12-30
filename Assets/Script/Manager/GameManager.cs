@@ -5,12 +5,22 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager Instance;
     public bool isGameOver;
     public Image hp;
     public GameObject over;    
-    void Awake()
+    public void Awake()
     {
-        isGameOver = false;        
+        isGameOver = false;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.transform.root.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
     IEnumerator FadeOutStart()
     {
@@ -35,7 +45,7 @@ public class GameManager : MonoBehaviour
             over.GetComponent<Image>().color = c;
             yield return null;
         }
-    }
+    }    
     void Update()
     {        
         if(hp.fillAmount == 0)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UI_button : MonoBehaviour
 {    
@@ -18,6 +19,13 @@ public class UI_button : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("quit");
-
+    }
+    public void CheckPortal_Forest()
+    {
+        LoadingManager.LoadScene("_02_Forest");
+    }
+    public void CheckPortal_Labyrinth()
+    {
+        LoadingManager.LoadScene("_03_Labyrinth");
     }
 }

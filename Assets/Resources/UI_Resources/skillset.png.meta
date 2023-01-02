@@ -180,15 +180,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skillset_run
+      name: skillset_buff
       rect:
         serializedVersion: 2
-        x: 501
+        x: 227
         y: 361
         width: 57
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      skillset_buff: 631192136
       skillset_sting: 1527478840
       skillset_swing: 1370266589
       skillset_t_to_b: -365012922
-      skillset_run: 631192136
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

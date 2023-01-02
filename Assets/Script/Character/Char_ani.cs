@@ -12,7 +12,7 @@ public class Char_ani :  MonoBehaviour
     private Transform Cam;
     Animator ani;
     public Image hp;
-    float moveSpeed;    
+    public static float moveSpeed;
     Vector2 centerPos;
     Vector2 LcenterPos;
     public Image JoyStick;
@@ -30,7 +30,7 @@ public class Char_ani :  MonoBehaviour
     [SerializeField]
     private Image Skill_4;
     [SerializeField]
-    private Image Portion;
+    private Image Portion;    
     public void Awake()
     {
         if (Instance == null)
@@ -51,7 +51,7 @@ public class Char_ani :  MonoBehaviour
         moveSpeed = 3f;
         centerPos = JoyStick.rectTransform.position;
         CcenterPos = Rotate_Camera.rectTransform.position;
-        ani.SetInteger("ani", 0);
+        ani.SetBool("Dead", false);        
     }
     public void Move()
     {
@@ -59,7 +59,7 @@ public class Char_ani :  MonoBehaviour
         Vector2 moveVec = (LcenterPos - centerPos).normalized;
         //Vector2 moveInput = new Vector2(moveVec.x, moveVec.y);
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        bool isMove = moveInput.magnitude != 0;
+        bool isMove = moveInput.magnitude != 0;        
         ani.SetBool("isMove", isMove);        
         if(isMove)
         {
@@ -67,20 +67,13 @@ public class Char_ani :  MonoBehaviour
             Vector3 lookRight = new Vector3(Cam.right.x, 0f, Cam.right.z).normalized;
             Vector3 moveDir = lookforward * moveInput.y + lookRight * moveInput.x;
             Char.forward = lookforward;            
-            transform.position += moveDir * moveSpeed * Time.deltaTime;
-                       
-            if (hp.fillAmount == 0)
-            {
-                ani.SetInteger("ani", 100);
-            }
+            transform.position += moveDir * moveSpeed * Time.deltaTime; 
+        }        
+        if (hp.fillAmount == 0)
+        {
+            moveSpeed = 0f;
+            ani.SetBool("Dead", true);
         }
-        if (isMove == false)
-        {            
-            if (hp.fillAmount == 0)
-            {
-                ani.SetInteger("ani", 100);
-            }
-        }       
     }    
     public void LookAround()
     {
@@ -107,8 +100,8 @@ public class Char_ani :  MonoBehaviour
         {
             if(Skill_1.fillAmount == 1)
             {                
-                StartCoroutine(CoolTime(Skill_1, 1));
-                ani.SetInteger("ani", 1);             
+                StartCoroutine(CoolTime(Skill_1, 1));                
+                ani.SetTrigger("Attack");
             }
             else
             {
@@ -120,7 +113,7 @@ public class Char_ani :  MonoBehaviour
             if (Skill_2.fillAmount == 1)
             {
                 StartCoroutine(CoolTime(Skill_2, 3));
-                ani.SetInteger("ani", 2);
+                ani.SetTrigger("Swing");
             }
             else
             {
@@ -132,7 +125,7 @@ public class Char_ani :  MonoBehaviour
             if (Skill_3.fillAmount == 1)
             {
                 StartCoroutine(CoolTime(Skill_3, 5));
-                ani.SetInteger("ani", 3);
+                ani.SetTrigger("Sting");
             }
             else
             {
@@ -143,15 +136,16 @@ public class Char_ani :  MonoBehaviour
         {
             if (Skill_4.fillAmount == 1)
             {
-                StartCoroutine(CoolTime(Skill_4, 8));
-                ani.SetInteger("ani", 4);
+                StartCoroutine(CoolTime(Skill_4, 30));
+                ani.SetTrigger("Buff");
+                StartCoroutine(OnBuff(20));
             }
             else
             {
                 Debug.Log("쿨타임입니다.");
             }
         }
-    }
+    }    
     public void ButtonPortion()
     {
         if (Input.GetKeyDown(KeyCode.Alpha5))
@@ -171,9 +165,14 @@ public class Char_ani :  MonoBehaviour
             }
         }
     }
-    public void AfterDelay()
+    IEnumerator OnBuff(int time)
     {
-        ani.SetInteger("ani", 0);
+        while(time > 0)
+        {                                          
+            time--;
+            yield return new WaitForSecondsRealtime(0.1f);
+        }
+        
     }
     IEnumerator CoolTime(Image _image, float cool)
     {

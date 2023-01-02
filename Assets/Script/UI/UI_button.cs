@@ -14,12 +14,7 @@ public class UI_button : MonoBehaviour
     public void OpenButton()
     {
         ui.SetActive(true);
-    }
-    public void ExitGame()
-    {
-        Application.Quit();
-        Debug.Log("quit");
-    }
+    }    
     public void CheckPortal_Forest()
     {
         ui.SetActive(false);

@@ -27,5 +27,5 @@ public class UI_Manager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }        
-    }
+    }    
 }

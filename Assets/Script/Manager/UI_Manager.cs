@@ -21,7 +21,7 @@ public class UI_Manager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(this.transform.root.gameObject);
+            DontDestroyOnLoad(this.transform.gameObject);
         }
         else
         {

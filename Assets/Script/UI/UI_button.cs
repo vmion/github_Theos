@@ -14,7 +14,12 @@ public class UI_button : MonoBehaviour
     public void OpenButton()
     {
         ui.SetActive(true);
-    }    
+    }
+    public void CheckPortal_Village()
+    {
+        ui.SetActive(false);
+        LoadingManager.LoadScene("_01_Village");
+    }
     public void CheckPortal_Forest()
     {
         ui.SetActive(false);

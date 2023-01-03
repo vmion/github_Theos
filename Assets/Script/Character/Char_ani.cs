@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Char_ani :  MonoBehaviour
-{
-    private static Char_ani Instance;
+{    
     [SerializeField]
     private Transform Char;
     [SerializeField]
@@ -30,31 +30,18 @@ public class Char_ani :  MonoBehaviour
     [SerializeField]
     private Image Skill_4;
     [SerializeField]
-    private Image Portion;    
-    public void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(this.transform.root.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
+    private Image Portion;      
+    
     void Start()
     {        
         ani = Char.GetComponent<Animator>();        
-        Char.parent.gameObject.transform.position = new Vector3(-15f, 0, 0);
-        Char.parent.gameObject.transform.rotation = Quaternion.Euler(0, 90f, 0);
         moveSpeed = 3f;
         centerPos = JoyStick.rectTransform.position;
         CcenterPos = Rotate_Camera.rectTransform.position;
         ani.SetBool("Dead", false);        
-    }
+    }    
     public void Move()
-    {
+    {        
         LcenterPos = JoyStick_Lever.rectTransform.position;
         Vector2 moveVec = (LcenterPos - centerPos).normalized;
         //Vector2 moveInput = new Vector2(moveVec.x, moveVec.y);
@@ -73,10 +60,10 @@ public class Char_ani :  MonoBehaviour
         {
             moveSpeed = 0f;
             ani.SetBool("Dead", true);
-        }
+        }        
     }    
     public void LookAround()
-    {
+    {        
         LCcenterPos = Camera_Lever.rectTransform.position;
         Vector2 moveVec = (LCcenterPos - CcenterPos).normalized;
         //Vector2 rotateInput = new Vector2(moveVec.x, moveVec.y);
@@ -185,9 +172,19 @@ public class Char_ani :  MonoBehaviour
     }
     void Update()
     {
-        LookAround();
+        //LookAround();
         Move();
         ButtonSkill();
         ButtonPortion();
+        bool changeScene = false;
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            changeScene = true;
+            if(changeScene == true)
+            {                
+                Char.gameObject.transform.position = new Vector3(-15, 0, 0);
+                changeScene = false;
+            }            
+        }        
     }
 }

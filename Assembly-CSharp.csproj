@@ -62,24 +62,26 @@
     <Compile Include="Assets\Script\UI\UI_skill.cs" />
     <Compile Include="Assets\Script\Object\Obj_Portal.cs" />
     <Compile Include="Assets\Script\Character\Char_ani.cs" />
+    <Compile Include="Assets\Script\Character\Ani_skill4.cs" />
     <Compile Include="Assets\Script\Npc\DialogueManager.cs" />
     <Compile Include="Assets\Script\UI\UI_fillamount.cs" />
+    <Compile Include="Assets\Script\Character\Ani_skill1.cs" />
     <Compile Include="Assets\Script\UI\UI_joyStick.cs" />
     <Compile Include="Assets\Script\Npc\InteractionEvent.cs" />
     <Compile Include="Assets\Script\Manager\UI_Manager.cs" />
+    <Compile Include="Assets\Script\Character\Ani_skill2.cs" />
     <Compile Include="Assets\Script\Npc\Dialogue.cs" />
     <Compile Include="Assets\Script\UI\UI_InventorySlot.cs" />
     <Compile Include="Assets\Script\Manager\LoadingManager.cs" />
     <Compile Include="Assets\Script\Npc\Npc_Text.cs" />
     <Compile Include="Assets\Script\UI\UI_Start.cs" />
     <Compile Include="Assets\Script\Npc\Npc_DialogParse.cs" />
+    <Compile Include="Assets\Script\Character\Ani_skill3.cs" />
     <Compile Include="Assets\Script\UI\UI_minimap.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Character\Ani_skill1.cs" />
-    <Compile Include="Assets\Script\Character\Ani_skill2.cs" />
-    <Compile Include="Assets\Script\Character\Ani_skill3.cs" />
-    <Compile Include="Assets\Script\Character\Ani_skill4.cs" />
+    <Compile Include="Assets\Script\Manager\Character_Manager.cs" />
+    <Compile Include="Assets\Script\Manager\Camera_Manager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

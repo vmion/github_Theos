@@ -62,11 +62,13 @@
     <Compile Include="Assets\Script\UI\UI_skill.cs" />
     <Compile Include="Assets\Script\Object\Obj_Portal.cs" />
     <Compile Include="Assets\Script\Character\Char_ani.cs" />
+    <Compile Include="Assets\Script\Manager\Character_Manager.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill4.cs" />
     <Compile Include="Assets\Script\Npc\DialogueManager.cs" />
     <Compile Include="Assets\Script\UI\UI_fillamount.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill1.cs" />
     <Compile Include="Assets\Script\UI\UI_joyStick.cs" />
+    <Compile Include="Assets\Script\Manager\Camera_Manager.cs" />
     <Compile Include="Assets\Script\Npc\InteractionEvent.cs" />
     <Compile Include="Assets\Script\Manager\UI_Manager.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill2.cs" />
@@ -80,8 +82,29 @@
     <Compile Include="Assets\Script\UI\UI_minimap.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Manager\Character_Manager.cs" />
-    <Compile Include="Assets\Script\Manager\Camera_Manager.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\CreatureProfile.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\ExtremityProfile.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\EyeMaterialProfile.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\EyebrowProfile.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Appearance\ArmatureExtension.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Animation\MecanimHipCorrection.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Appearance\AccessoryManager.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Animation\AnimationBoneWanderCorrection.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Animation\SimpleHeadTrack.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Appearance\EditorParentageManager.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Appearance\SimpleClothingMaterialSelector.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Appearance\ExtremityManager.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Demo\Scripts\SetParentSettings.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Demo\Scripts\CopyPosition.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Animation\AnimationClipRecord.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Editor Window\AnimationClipRecorderWindow.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\HairMaterialProfile.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Demo\Scripts\SimpleSetParent.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\MecanimHipCorrectionProfile.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\BeardProfile.cs" />
+    <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\HairProfile.cs" />
+    <Compile Include="Assets\Script\Manager\Spawn_Manager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

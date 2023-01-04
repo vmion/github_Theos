@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Character_Manager : MonoBehaviour
 {
+    public Collider playerCollider { get; set; }      
     private static Character_Manager Instance;
     public static Character_Manager instance
     {
@@ -15,7 +16,7 @@ public class Character_Manager : MonoBehaviour
             }
             return instance;
         }
-    }
+    }    
     public void Awake()
     {
         if (Instance == null)

@@ -17,9 +17,11 @@ public class Spawn_Manager : MonoBehaviour
     float xStartpos;
     float zStartpos;
     Dictionary<int, CellInfo> cellDic;
+    //Dictionary<string, GameObject> mobDic;
     private void Awake()
     {
         cellDic = new Dictionary<int, CellInfo>();
+        //mobDic = new Dictionary<string, GameObject>();
     }
     void Start()
     {
@@ -58,23 +60,37 @@ public class Spawn_Manager : MonoBehaviour
     
     public void SpawnAll()
     {
-        int tileIndex = row * column;        
+        int tileIndex = row * column;
+        CellInfo cellInfo = new CellInfo();
         Vector3 tmp = Vector3.zero;
         for (int i = 0; i < tileIndex; i++)
         {
             int nR = i / column;
             int nC = i % column;
-            Vector3 centerPos = GetCellCenterPos(nR, nC);
-            GameObject[] tmpObjs = GameObject.FindGameObjectsWithTag("Monster");
+            Vector3 centerPos = GetCellCenterPos(nR, nC);  
+            /*
+            GameObject[] tmpObjs = Resources.LoadAll<GameObject>("Monsters/");            
+            for (int j = 0; j < tmpObjs.Length; j++)
+            {
+                mobDic.Add("Centaur", tmpObjs[0]);
+                mobDic.Add("Gorgon", tmpObjs[1]);
+                mobDic.Add("Satyr", tmpObjs[2]);
+            }
+            GameObject SpawnMob = Instantiate(mobDic.Values)
+            gorgon.tag = "Monster";
+            gorgon.transform.position = centerPos;
+            
             foreach(GameObject one in tmpObjs)
             {
+                if(one. == CellInfo.arrIndex)
                 one.SetActive(true);
-                one.transform.position = centerPos;                
-            }            
+                one.transform.position = cellInfo.centerPos;
+            } 
+            */
         }
     }
     public void GetMapsize()
-    {        
+    {
         MeshFilter meshFilter = GetComponent<MeshFilter>();
         Vector3[] vertexs = meshFilter.mesh.vertices;
         float xMin, xMax, zMin, zMax;
@@ -101,34 +117,8 @@ public class Spawn_Manager : MonoBehaviour
         size.z = (worldMax.z - worldMin.z);
         Debug.Log(size.x + " X " + size.z + "사이즈의 맵이다.");
     }
-    /*
+    
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hitInfo;
-            if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity))
-            {
-                Debug.Log(hitInfo.point);
-                //마우스로 선택한 지점의 좌표를 알고 있으며
-                //row의 개수와 column의 개수를 알고 있는 상황
-                //cell하나의 크기를 알고 있다.
-                //마우스로 선택한 row와 column을 구하시오.
-                int _col = (int)((hitInfo.point.x + size.x * 0.5f) / cellxSize);
-                int _row = -1 * (int)((hitInfo.point.z - size.z * 0.5f) / cellzSize);
-                int key = _row * column + _col;
-                CellInfo result;
-                if (cellDic.TryGetValue(key, out result))
-                {
-                    Debug.Log(result.centerPos);
-                    //검색한 위치에 구를 생성
-                    GameObject obj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                    obj.transform.position = result.centerPos;
-                }
-            }
-        }
-
-    }
-    */
+    }    
 }

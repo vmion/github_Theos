@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MonsterManager : MonoBehaviour
 {
-    public Collider monsterCollider { get; set; }
-    Dictionary<string, GameObject> mobDic;
+    public Collider monsterCollider { get; set; }    
     private static MonsterManager Instance;
+    public static Dictionary<string, GameObject> mobDic;
     public static MonsterManager instance
     {
         get
@@ -21,20 +21,14 @@ public class MonsterManager : MonoBehaviour
     void Awake()
     {
         mobDic = new Dictionary<string, GameObject>();
-    }
-    
-    void Start()
-    {
-        mobDic.Clear();
         GameObject[] tmpObjs = Resources.LoadAll<GameObject>("Monsters/");
-        for (int j = 0; j < tmpObjs.Length; j++)
-        {
-            mobDic.Add("켄타우로스", tmpObjs[0]);
-            mobDic.Add("고르곤", tmpObjs[1]);
-            mobDic.Add("사티르", tmpObjs[2]);
-        }
-        Debug.Log("몬스터 리소스 로드 완료");
-    }
+        mobDic.Add("켄타우로스", tmpObjs[0]);
+        mobDic.Add("고르곤", tmpObjs[1]);
+        mobDic.Add("사티르", tmpObjs[2]);
+        mobDic.Add("아라크네", tmpObjs[3]);
+        mobDic.Add("미노타우루스", tmpObjs[4]);
+
+    }    
     void Update()
     {        
     }

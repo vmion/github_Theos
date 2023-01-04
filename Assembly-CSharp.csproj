@@ -78,6 +78,7 @@
     <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\MecanimHipCorrectionProfile.cs" />
     <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\HairProfile.cs" />
     <Compile Include="Assets\Script\UI\UI_joyStick.cs" />
+    <Compile Include="Assets\Script\Monster\Monster_Bounds.cs" />
     <Compile Include="Assets\Greek Monster Pack\Demo\Scripts\CopyPosition.cs" />
     <Compile Include="Assets\Script\Manager\Camera_Manager.cs" />
     <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Animation\AnimationBoneWanderCorrection.cs" />
@@ -100,13 +101,12 @@
     <Compile Include="Assets\Greek Monster Pack\Demo\Scripts\SetParentSettings.cs" />
     <Compile Include="Assets\Script\Npc\Npc_DialogParse.cs" />
     <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Appearance\EditorParentageManager.cs" />
+    <Compile Include="Assets\Script\Manager\MonsterManager.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill3.cs" />
     <Compile Include="Assets\Script\UI\UI_minimap.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Monster\Monster_Bounds.cs" />
-    <Compile Include="Assets\Script\Manager\MonsterManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

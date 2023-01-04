@@ -16,12 +16,11 @@ public class Spawn_Manager : MonoBehaviour
     float cellzSize;
     float xStartpos;
     float zStartpos;
-    Dictionary<int, CellInfo> cellDic;
-    //Dictionary<string, GameObject> mobDic;
+    Dictionary<int, CellInfo> cellDic;    
+    public Transform ParentMonster;
     private void Awake()
     {
-        cellDic = new Dictionary<int, CellInfo>();
-        //mobDic = new Dictionary<string, GameObject>();
+        cellDic = new Dictionary<int, CellInfo>();        
     }
     void Start()
     {
@@ -30,9 +29,8 @@ public class Spawn_Manager : MonoBehaviour
         cellzSize = size.z / (float)row;
         xStartpos = transform.position.x - size.x * 0.5f;
         zStartpos = transform.position.z + size.z * 0.5f;
-        Initialize();
-        SpawnAll();
-        //Invoke("SpawnAll", 10f);        
+        Initialize();        
+        Invoke("SpawnAll", 1f);
     }
     public void Initialize()
     {
@@ -60,33 +58,30 @@ public class Spawn_Manager : MonoBehaviour
     
     public void SpawnAll()
     {
-        int tileIndex = row * column;
-        CellInfo cellInfo = new CellInfo();
-        Vector3 tmp = Vector3.zero;
+        int tileIndex = row * column; 
         for (int i = 0; i < tileIndex; i++)
         {
             int nR = i / column;
             int nC = i % column;
-            Vector3 centerPos = GetCellCenterPos(nR, nC);  
-            /*
-            GameObject[] tmpObjs = Resources.LoadAll<GameObject>("Monsters/");            
-            for (int j = 0; j < tmpObjs.Length; j++)
-            {
-                mobDic.Add("Centaur", tmpObjs[0]);
-                mobDic.Add("Gorgon", tmpObjs[1]);
-                mobDic.Add("Satyr", tmpObjs[2]);
+            Vector3 centerPos = GetCellCenterPos(nR, nC);
+            if(i % 3 == 0)
+            {                               
+                GameObject mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
+                mob.tag = "Monster";
+                mob.transform.position = centerPos;
             }
-            GameObject SpawnMob = Instantiate(mobDic.Values)
-            gorgon.tag = "Monster";
-            gorgon.transform.position = centerPos;
-            
-            foreach(GameObject one in tmpObjs)
-            {
-                if(one. == CellInfo.arrIndex)
-                one.SetActive(true);
-                one.transform.position = cellInfo.centerPos;
-            } 
-            */
+            else if (i % 3 == 1)
+            {                
+                GameObject mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
+                mob.tag = "Monster";
+                mob.transform.position = centerPos;
+            }
+            else
+            {               
+                GameObject mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
+                mob.tag = "Monster";
+                mob.transform.position = centerPos;
+            }            
         }
     }
     public void GetMapsize()
@@ -115,10 +110,10 @@ public class Spawn_Manager : MonoBehaviour
         Vector3 worldMax = transform.TransformPoint(tmp2);
         size.x = (worldMax.x - worldMin.x);
         size.z = (worldMax.z - worldMin.z);
-        Debug.Log(size.x + " X " + size.z + "사이즈의 맵이다.");
-    }
-    
+        //Debug.Log(size.x + " X " + size.z + "사이즈의 맵이다.");
+    }    
     void Update()
     {
+        
     }    
 }

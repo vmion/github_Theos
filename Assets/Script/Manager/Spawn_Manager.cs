@@ -10,28 +10,25 @@ public struct CellInfo
 public class Spawn_Manager : MonoBehaviour
 {    
     Vector3 size;
-    public int row; 
-    public int column; 
-    float cellxSize;
-    float cellzSize;
-    float xStartpos;
-    float zStartpos;
-    Dictionary<int, CellInfo> cellDic;    
-    public Transform ParentMonster;
-    private void Awake()
+    public static int row; 
+    public static int column;
+    public static float cellxSize;
+    public static float cellzSize;
+    public static float xStartpos;
+    public static float zStartpos;
+    Dictionary<int, CellInfo> cellDic;
+    void Awake()
     {
-        cellDic = new Dictionary<int, CellInfo>();        
-    }
-    void Start()
-    {
+        cellDic = new Dictionary<int, CellInfo>();
+        row = 4;
+        column = 4;
         GetMapsize();
         cellxSize = size.x / (float)column;
         cellzSize = size.z / (float)row;
         xStartpos = transform.position.x - size.x * 0.5f;
         zStartpos = transform.position.z + size.z * 0.5f;
-        Initialize();        
-        Invoke("SpawnAll", 1f);
-    }
+        Initialize();
+    }    
     public void Initialize()
     {
         cellDic.Clear();
@@ -54,39 +51,7 @@ public class Spawn_Manager : MonoBehaviour
         pos.y = 1f;
         pos.z = zStartpos - cellzSize * _r - cellzSize * 0.5f;
         return pos;
-    }
-    
-    public void SpawnAll()
-    {
-        int tileIndex = row * column; 
-        for (int i = 0; i < tileIndex; i++)
-        {
-            int nR = i / column;
-            int nC = i % column;
-            Vector3 centerPos = GetCellCenterPos(nR, nC);
-            if(i % 3 == 0)
-            {                               
-                GameObject mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
-                mob.tag = "Monster";
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-            }
-            else if (i % 3 == 1)
-            {                
-                GameObject mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
-                mob.tag = "Monster";
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-            }
-            else
-            {               
-                GameObject mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
-                mob.tag = "Monster";
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-            }            
-        }
-    }
+    }    
     public void GetMapsize()
     {
         MeshFilter meshFilter = GetComponent<MeshFilter>();
@@ -114,7 +79,40 @@ public class Spawn_Manager : MonoBehaviour
         size.x = (worldMax.x - worldMin.x);
         size.z = (worldMax.z - worldMin.z);
         //Debug.Log(size.x + " X " + size.z + "사이즈의 맵이다.");
-    }    
+    }
+    /*
+    public void SpawnAll()
+    {
+        int tileIndex = row * column; 
+        for (int i = 0; i < tileIndex; i++)
+        {
+            int nR = i / column;
+            int nC = i % column;
+            Vector3 centerPos = GetCellCenterPos(nR, nC);
+            if(i % 3 == 0)
+            {                               
+                GameObject mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
+                mob.tag = "Monster";
+                mob.transform.position = centerPos;
+                mob.AddComponent<Monster_ani>();                
+            }
+            else if (i % 3 == 1)
+            {                
+                GameObject mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
+                mob.tag = "Monster";
+                mob.transform.position = centerPos;
+                mob.AddComponent<Monster_ani>();
+            }
+            else
+            {               
+                GameObject mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
+                mob.tag = "Monster";
+                mob.transform.position = centerPos;
+                mob.AddComponent<Monster_ani>();
+            }            
+        }
+    }
+    */
     void Update()
     {
         

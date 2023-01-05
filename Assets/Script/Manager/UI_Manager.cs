@@ -9,11 +9,11 @@ public class UI_Manager : MonoBehaviour
     {
         get
         {
-            if (null == instance)
+            if (null == Instance)
             {
                 return null;
             }                
-            return instance;
+            return Instance;
         }
     }
     public void Awake()

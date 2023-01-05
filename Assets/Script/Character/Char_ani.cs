@@ -31,8 +31,9 @@ public class Char_ani :  MonoBehaviour
     [SerializeField]
     private Image Portion;    
     void Start()
-    {        
-        ani = Char.GetComponent<Animator>();        
+    {
+        Char = Character_Manager.instance.transform.GetChild(0);
+        ani = Char.GetComponent<Animator>();
         moveSpeed = 3f;
         //centerPos = JoyStick.rectTransform.position;
         //CcenterPos = Rotate_Camera.rectTransform.position;
@@ -45,7 +46,7 @@ public class Char_ani :  MonoBehaviour
         //Vector2 moveInput = new Vector2(moveVec.x, moveVec.y);
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         bool isMove = moveInput.magnitude != 0;        
-        ani.SetBool("isMove", isMove);        
+        ani.SetBool("isMove", isMove); 
         if(isMove)
         {
             Vector3 lookforward = new Vector3(Cam.forward.x, 0f, Cam.forward.z).normalized;
@@ -56,7 +57,7 @@ public class Char_ani :  MonoBehaviour
         }        
         if (hp.fillAmount == 0)
         {
-            moveSpeed = 0f;
+            moveSpeed = 0;
             ani.SetBool("Dead", true);
         }        
     }    
@@ -173,18 +174,6 @@ public class Char_ani :  MonoBehaviour
         //LookAround();
         Move();
         ButtonSkill();
-        ButtonPortion();
-        /*
-        bool changeScene = false;
-        if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            changeScene = true;
-            if(changeScene == true)
-            {                
-                Char.gameObject.transform.position = new Vector3(-15, 0, 0);
-                changeScene = false;
-            }            
-        }  
-        */
+        ButtonPortion();        
     }
 }

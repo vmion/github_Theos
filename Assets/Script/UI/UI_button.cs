@@ -10,10 +10,12 @@ public class UI_button : MonoBehaviour
     public void CloseButton()
     {
         ui.SetActive(false);
+        Time.timeScale = 1f;
     }
     public void OpenButton()
     {
         ui.SetActive(true);
+        Time.timeScale = 0f;
     }
     public void CheckPortal_Village()
     {

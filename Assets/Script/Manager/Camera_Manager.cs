@@ -32,15 +32,16 @@ public class Camera_Manager : MonoBehaviour
         else
         {
             Destroy(this.gameObject);
-        } 
-    }
-    
+        }        
+    }    
     void Update()
     {        
-        xmove += Input.GetAxis("Mouse X"); 
-        ymove -= Input.GetAxis("Mouse Y"); 
+        xmove += Input.GetAxis("Mouse X");
+        //ymove -= Input.GetAxis("Mouse Y");
+        ymove = 6f;
         transform.rotation = Quaternion.Euler(ymove, xmove, 0); 
-        Vector3 reverseDistance = new Vector3(0.0f, -2f, distance); 
-        transform.position = player.transform.position - transform.rotation * reverseDistance;
+        Vector3 reverseDistance = new Vector3(0.0f, -2f, distance);
+        Transform character = player.transform.GetChild(0);
+        transform.position = character.transform.position - transform.rotation * reverseDistance;
     }
 }

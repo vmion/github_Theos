@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Character_Manager : MonoBehaviour
 {
-    public  static Collider playerCollider { get; set; }      
+    public static Collider playerCollider { get; set; }      
     private static Character_Manager Instance;
     public static Dictionary<string, GameObject> charDic;
     public Transform ParentPlayer;
@@ -33,16 +33,16 @@ public class Character_Manager : MonoBehaviour
         charDic = new Dictionary<string, GameObject>();
         GameObject[] tmpObjs = Resources.LoadAll<GameObject>("Character/");
         charDic.Add("플레이어", tmpObjs[0]);
+        LogIN();
     }
     void LogIN()
     {
         GameObject player = Instantiate(charDic["플레이어"], ParentPlayer);
         player.tag = "Player";
-        player.transform.position = new Vector3(-15f, 0, 0);
-        player.AddComponent<Char_ani>();
+        player.transform.position = ParentPlayer.transform.position;     
     }
     void Start()
     {
-        //LogIN();
+        
     }
 }

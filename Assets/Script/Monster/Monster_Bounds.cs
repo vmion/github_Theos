@@ -19,7 +19,7 @@ public class Monster_Bounds : MonoBehaviour
     {
         if(mobCollider.bounds.Intersects(otherCollider.bounds))
         {
-
+            
         }
     }
 }

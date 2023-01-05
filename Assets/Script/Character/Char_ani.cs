@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class Char_ani :  MonoBehaviour
 {    
@@ -13,14 +12,14 @@ public class Char_ani :  MonoBehaviour
     Animator ani;
     public Image hp;
     public static float moveSpeed;
-    Vector2 centerPos;
-    Vector2 LcenterPos;
-    public Image JoyStick;
-    public Image JoyStick_Lever;
-    Vector2 CcenterPos;
-    Vector2 LCcenterPos;
-    public Image Rotate_Camera;
-    public Image Camera_Lever;
+    //Vector2 centerPos;
+    //Vector2 LcenterPos;
+    //public Image JoyStick;
+    //public Image JoyStick_Lever;
+    //Vector2 CcenterPos;
+    //Vector2 LCcenterPos;
+    //public Image Rotate_Camera;
+    //public Image Camera_Lever;
     [SerializeField]
     private Image Skill_1;
     [SerializeField]
@@ -30,20 +29,19 @@ public class Char_ani :  MonoBehaviour
     [SerializeField]
     private Image Skill_4;
     [SerializeField]
-    private Image Portion;      
-    
+    private Image Portion;    
     void Start()
     {        
         ani = Char.GetComponent<Animator>();        
         moveSpeed = 3f;
-        centerPos = JoyStick.rectTransform.position;
-        CcenterPos = Rotate_Camera.rectTransform.position;
+        //centerPos = JoyStick.rectTransform.position;
+        //CcenterPos = Rotate_Camera.rectTransform.position;
         ani.SetBool("Dead", false);
     }    
     public void Move()
     {        
-        LcenterPos = JoyStick_Lever.rectTransform.position;
-        Vector2 moveVec = (LcenterPos - centerPos).normalized;
+        //LcenterPos = JoyStick_Lever.rectTransform.position;
+        //Vector2 moveVec = (LcenterPos - centerPos).normalized;
         //Vector2 moveInput = new Vector2(moveVec.x, moveVec.y);
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         bool isMove = moveInput.magnitude != 0;        
@@ -64,8 +62,8 @@ public class Char_ani :  MonoBehaviour
     }    
     public void LookAround()
     {        
-        LCcenterPos = Camera_Lever.rectTransform.position;
-        Vector2 moveVec = (LCcenterPos - CcenterPos).normalized;
+        //LCcenterPos = Camera_Lever.rectTransform.position;
+        //Vector2 moveVec = (LCcenterPos - CcenterPos).normalized;
         //Vector2 rotateInput = new Vector2(moveVec.x, moveVec.y);
         Vector2 rotateInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         Vector3 camAngle = Cam.rotation.eulerAngles;
@@ -176,6 +174,7 @@ public class Char_ani :  MonoBehaviour
         Move();
         ButtonSkill();
         ButtonPortion();
+        /*
         bool changeScene = false;
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
@@ -185,6 +184,7 @@ public class Char_ani :  MonoBehaviour
                 Char.gameObject.transform.position = new Vector3(-15, 0, 0);
                 changeScene = false;
             }            
-        }        
+        }  
+        */
     }
 }

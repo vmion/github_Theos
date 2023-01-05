@@ -9,13 +9,19 @@ public class Camera_Manager : MonoBehaviour
     {
         get
         {
-            if (null == instance)
+            if (null == Instance)
             {
                 return null;
             }
-            return instance;
+            return Instance;
         }
     }
+    public GameObject player;
+    [SerializeField]
+    private float xmove = 0;
+    [SerializeField]
+    private float ymove = 0;
+    public float distance = 3;
     public void Awake()
     {
         if (Instance == null)
@@ -26,20 +32,15 @@ public class Camera_Manager : MonoBehaviour
         else
         {
             Destroy(this.gameObject);
-        }
+        } 
     }
-    public GameObject player;
-    [SerializeField]
-    private float xmove = 0;
-    [SerializeField]
-    private float ymove = 0;  
-    public float distance = 3;
+    
     void Update()
-    {
+    {        
         xmove += Input.GetAxis("Mouse X"); 
         ymove -= Input.GetAxis("Mouse Y"); 
         transform.rotation = Quaternion.Euler(ymove, xmove, 0); 
         Vector3 reverseDistance = new Vector3(0.0f, -2f, distance); 
-        transform.position = player.transform.position - transform.rotation * reverseDistance; 
+        transform.position = player.transform.position - transform.rotation * reverseDistance;
     }
 }

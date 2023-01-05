@@ -6,16 +6,17 @@ public class Character_Manager : MonoBehaviour
 {
     public  static Collider playerCollider { get; set; }      
     private static Character_Manager Instance;
-    public static Dictionary<string, GameObject> charDic;    
+    public static Dictionary<string, GameObject> charDic;
+    public Transform ParentPlayer;
     public static Character_Manager instance
     {
         get
         {
-            if (null == instance) 
+            if (null == Instance) 
             {
                 return null;
             }
-            return instance;
+            return Instance;
         }
     }    
     public void Awake()
@@ -33,13 +34,15 @@ public class Character_Manager : MonoBehaviour
         GameObject[] tmpObjs = Resources.LoadAll<GameObject>("Character/");
         charDic.Add("플레이어", tmpObjs[0]);
     }
+    void LogIN()
+    {
+        GameObject player = Instantiate(charDic["플레이어"], ParentPlayer);
+        player.tag = "Player";
+        player.transform.position = new Vector3(-15f, 0, 0);
+        player.AddComponent<Char_ani>();
+    }
     void Start()
     {
-        //GameObject player = Instantiate(charDic["플레이어"], ParentPlayer);
-        //GameObject tmpObj = Resources.Load<GameObject>("Character/");
-        //GameObject player = Instantiate(tmpObj, ParentPlayer);
-        //player.tag = "Player";
-        //player.transform.position = new Vector3(-15f, 0, 0);
-        //player.AddComponent<Char_ani>();
+        //LogIN();
     }
 }

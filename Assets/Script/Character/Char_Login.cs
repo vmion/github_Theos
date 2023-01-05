@@ -13,7 +13,7 @@ public class Char_Login : MonoBehaviour
     {
         GameObject player = Instantiate(Character_Manager.charDic["플레이어"], ParentPlayer);
         player.tag = "Player";
-        player.transform.position = new Vector3(-15f, 0, 0);        
+        player.transform.position = new Vector3(-15f, 0, 0);               
     }
     void Update()
     {

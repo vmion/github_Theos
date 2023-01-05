@@ -38,7 +38,7 @@ public class Char_ani :  MonoBehaviour
         moveSpeed = 3f;
         centerPos = JoyStick.rectTransform.position;
         CcenterPos = Rotate_Camera.rectTransform.position;
-        ani.SetBool("Dead", false);        
+        ani.SetBool("Dead", false);
     }    
     public void Move()
     {        

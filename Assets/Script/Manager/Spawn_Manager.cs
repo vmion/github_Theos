@@ -69,18 +69,21 @@ public class Spawn_Manager : MonoBehaviour
                 GameObject mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
+                mob.AddComponent<Monster_ani>();
             }
             else if (i % 3 == 1)
             {                
                 GameObject mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
+                mob.AddComponent<Monster_ani>();
             }
             else
             {               
                 GameObject mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
+                mob.AddComponent<Monster_ani>();
             }            
         }
     }

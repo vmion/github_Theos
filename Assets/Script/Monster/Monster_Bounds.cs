@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Monster_Bounds : MonoBehaviour
 {
-    public Collider mobCollider { get; set; }
-    public Collider otherCollider { get; set; }
+    Collider mobCollider;
+    Collider otherCollider;
     void Awake()
     {
-        mobCollider = GetComponent<Collider>();
-        otherCollider = Character_Manager.instance.GetComponent<Collider>();
+        mobCollider = MonsterManager.monsterCollider;
+        otherCollider = Character_Manager.playerCollider;
     }
     void Start()
     {

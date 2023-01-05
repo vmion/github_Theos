@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterManager : MonoBehaviour
 {
-    public Collider monsterCollider { get; set; }    
+    public static Collider monsterCollider { get; set; }    
     private static MonsterManager Instance;
     public static Dictionary<string, GameObject> mobDic;
     public static MonsterManager instance
@@ -27,7 +27,6 @@ public class MonsterManager : MonoBehaviour
         mobDic.Add("사티르", tmpObjs[2]);
         mobDic.Add("아라크네", tmpObjs[3]);
         mobDic.Add("미노타우루스", tmpObjs[4]);
-
     }    
     void Update()
     {        

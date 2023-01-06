@@ -383,6 +383,7 @@
 "Assets/Script/Character/Ani_skill2.cs"
 "Assets/Script/Character/Ani_skill3.cs"
 "Assets/Script/Character/Ani_skill4.cs"
+"Assets/Script/Character/CharSpawn_labyrinth.cs"
 "Assets/Script/Character/Char_ani.cs"
 "Assets/Script/InstanceCheck.cs"
 "Assets/Script/Manager/Camera_Manager.cs"

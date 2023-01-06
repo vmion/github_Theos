@@ -8,6 +8,7 @@ public class Character_Manager : MonoBehaviour
     private static Character_Manager Instance;
     public static Dictionary<string, GameObject> charDic;
     public Transform ParentPlayer;
+    //public static Collider collider;
     public static Character_Manager instance
     {
         get
@@ -43,6 +44,7 @@ public class Character_Manager : MonoBehaviour
     }
     void Start()
     {
-        
-    }
+        playerCollider = Instance.GetComponentInChildren<Collider>();
+        Debug.Log("manager = " + playerCollider.gameObject.name);
+    }    
 }

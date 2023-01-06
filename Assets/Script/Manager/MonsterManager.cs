@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class MonsterManager : MonoBehaviour
 {
-    //public static Collider monsterCollider { get; set; }     
+    public static Collider[] monsterCollider { get; set; }     
     private static MonsterManager Instance;
     public static Dictionary<string, GameObject> mobDic;
     public Transform ParentMonster;
+    Collider otherCollider;
     public static MonsterManager instance
     {
         get
@@ -28,6 +29,17 @@ public class MonsterManager : MonoBehaviour
         mobDic.Add("사티르", tmpObjs[2]);
         mobDic.Add("아라크네", tmpObjs[3]);
         mobDic.Add("미노타우루스", tmpObjs[4]);
+
+        if (Application.CanStreamedLevelBeLoaded(3))
+        {
+            ForestSpawnAll();
+        }
+        monsterCollider = GetComponentsInChildren<Collider>();
+        otherCollider = Character_Manager.playerCollider;
+    }
+    void Start()
+    {
+        
     }
     public Vector3 GetCellCenterPos(int _r, int _c)
     {
@@ -63,22 +75,25 @@ public class MonsterManager : MonoBehaviour
                 GameObject mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
+                mob.AddComponent<Monster_ani>();                
             }
             else
             {
                 GameObject mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
+                mob.AddComponent<Monster_ani>();                
             }
         }
     }
-    void Start()
+    void Update()
     {
-        if(Application.CanStreamedLevelBeLoaded(3))
+        for(int i = 0; i < monsterCollider.Length; i++)
         {
-            ForestSpawnAll();
+            if (monsterCollider[i].bounds.Intersects(otherCollider.bounds))
+            {
+                monsterCollider[i].gameObject.SetActive(false);
+            }
         }        
     }
 }

@@ -11,7 +11,7 @@ public class Monster_ani : MonoBehaviour
     }
     void Start()
     {
-        Debug.Log(name + "애니메이터");
+        //Debug.Log(name + "애니메이터");
     }
     void Update()
     {

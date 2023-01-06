@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterManager : MonoBehaviour
 {
-    public static Collider monsterCollider { get; set; }    
+    //public static Collider monsterCollider { get; set; }     
     private static MonsterManager Instance;
     public static Dictionary<string, GameObject> mobDic;
     public Transform ParentMonster;

@@ -12573,6 +12573,7 @@ GameObject:
   - component: {fileID: 1413482093255610712}
   - component: {fileID: 1413482093255610709}
   - component: {fileID: 7859660345667745232}
+  - component: {fileID: 3833203273314335163}
   m_Layer: 0
   m_Name: 0_Centaur
   m_TagString: Monster
@@ -12811,6 +12812,28 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 848738974752588258, guid: e3e7889129aaee0429d9b8d202eaa20a, type: 3}
+--- !u!195 &3833203273314335163
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7859660345667745233}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &7865622388440105908
 GameObject:
   m_ObjectHideFlags: 0

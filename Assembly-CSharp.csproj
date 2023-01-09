@@ -62,6 +62,7 @@
     <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Animation\AnimationClipRecord.cs" />
     <Compile Include="Assets\Script\UI\UI_Loading.cs" />
     <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Animation\SimpleHeadTrack.cs" />
+    <Compile Include="Assets\Script\Character\CharSpawn.cs" />
     <Compile Include="Assets\Script\UI\UI_skill.cs" />
     <Compile Include="Assets\Greek Monster Pack\Common\Scripts\Profiles\EyeMaterialProfile.cs" />
     <Compile Include="Assets\Script\Object\Obj_Portal.cs" />
@@ -106,12 +107,11 @@
     <Compile Include="Assets\Script\Character\Ani_skill3.cs" />
     <Compile Include="Assets\Script\UI\UI_minimap.cs" />
     <Compile Include="Assets\Script\InstanceCheck.cs" />
-    <Compile Include="Assets\Script\Character\CharSpawn_labyrinth.cs" />
+    <Compile Include="Assets\Script\Boss\Boss_Hp.cs" />
     <Compile Include="Assets\Script\Manager\GameManager.cs" />
     <Compile Include="Assets\Script\TimeCheck.cs" />
     <Compile Include="Assets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Character\CharSpawn.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

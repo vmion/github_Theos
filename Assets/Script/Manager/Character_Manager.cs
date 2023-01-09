@@ -7,7 +7,7 @@ public class Character_Manager : MonoBehaviour
     public static Collider playerCollider { get; set; }      
     private static Character_Manager Instance;
     public static Dictionary<string, GameObject> charDic;
-    public Transform ParentPlayer;
+    public static Transform ParentPlayer;
     //public static Collider collider;
     public static Character_Manager instance
     {
@@ -19,7 +19,7 @@ public class Character_Manager : MonoBehaviour
             }
             return Instance;
         }
-    }    
+    }
     public void Awake()
     {
         if (Instance == null)
@@ -31,19 +31,24 @@ public class Character_Manager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        ParentPlayer = GameObject.Find("Player").transform;
         charDic = new Dictionary<string, GameObject>();
         GameObject[] tmpObjs = Resources.LoadAll<GameObject>("Character/");
         charDic.Add("플레이어", tmpObjs[0]);
-        LogIN();
+        //LogIN();
     }
     void LogIN()
     {
-        GameObject player = Instantiate(charDic["플레이어"], ParentPlayer);
-        player.tag = "Player";
-        player.transform.position = ParentPlayer.transform.position;     
+        if(!GameObject.Find("Character(Clone)"))
+        {
+            GameObject player = Instantiate(charDic["플레이어"], ParentPlayer);
+            player.tag = "Player";
+            player.transform.position = ParentPlayer.transform.position;
+        }        
     }
     void Start()
-    {
+    {        
+        LogIN();        
         playerCollider = Instance.GetComponentInChildren<Collider>();
         Debug.Log("manager = " + playerCollider.gameObject.name);
     }    

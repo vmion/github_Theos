@@ -29,17 +29,17 @@ public class MonsterManager : MonoBehaviour
         mobDic.Add("사티르", tmpObjs[2]);
         mobDic.Add("아라크네", tmpObjs[3]);
         mobDic.Add("미노타우루스", tmpObjs[4]);
-
-        if (Application.CanStreamedLevelBeLoaded(3))
-        {
-            ForestSpawnAll();
-        }
-        monsterCollider = GetComponentsInChildren<Collider>();
-        otherCollider = Character_Manager.playerCollider;
+        
+              
     }
     void Start()
     {
-        
+        if (Application.CanStreamedLevelBeLoaded(3))
+        {
+            ForestSpawnAll();
+        }        
+        monsterCollider = GetComponentsInChildren<Collider>();
+        otherCollider = Character_Manager.playerCollider;
     }
     public Vector3 GetCellCenterPos(int _r, int _c)
     {
@@ -51,7 +51,7 @@ public class MonsterManager : MonoBehaviour
         pos.x = xStartpos + cellxSize * _c + cellxSize * 0.5f;
         pos.y = 1f;
         pos.z = zStartpos - cellzSize * _r - cellzSize * 0.5f;
-        return pos;
+        return pos;        
     }
     public void ForestSpawnAll()
     {
@@ -62,7 +62,7 @@ public class MonsterManager : MonoBehaviour
         {
             int nR = i / column;
             int nC = i % column;
-            Vector3 centerPos = GetCellCenterPos(nR, nC);
+            Vector3 centerPos = GetCellCenterPos(nR, nC);            
             if (i % 3 == 0)
             {
                 GameObject mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
@@ -88,12 +88,14 @@ public class MonsterManager : MonoBehaviour
     }
     void Update()
     {
+        /*
         for(int i = 0; i < monsterCollider.Length; i++)
         {
             if (monsterCollider[i].bounds.Intersects(otherCollider.bounds))
             {
                 monsterCollider[i].gameObject.SetActive(false);
             }
-        }        
+        } 
+        */
     }
 }

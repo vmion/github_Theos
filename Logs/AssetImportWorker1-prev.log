@@ -1,0 +1,2264 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16238 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+Z:\unity\2021.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+Z:/github/github_Theos
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+55712
+Successfully changed project path to: Z:/github/github_Theos
+Z:/github/github_Theos
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 92.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
+[Subsystems] Discovering subsystems at path Z:/unity/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path Z:/github/github_Theos/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2488)
+    Vendor:   NVIDIA
+    VRAM:     8043 MB
+Initialize mono
+Mono path[0] = 'Z:/unity/2021.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'Z:/unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'Z:/unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56544
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: Z:/unity/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001924 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 93.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.571 seconds
+Domain Reload Profiling:
+	ReloadAssembly (572ms)
+		BeginReloadAssembly (59ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (426ms)
+			LoadAssemblies (58ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (97ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (257ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (113ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002554 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.981 seconds
+Domain Reload Profiling:
+	ReloadAssembly (982ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (785ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (258ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (351ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3740 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (255.6 KB). Loaded Objects now: 4224.
+Memory consumption went from 219.7 MB to 219.4 MB.
+Total: 4.618700 ms (FindLiveObjects: 0.364800 ms CreateObjectMapping: 0.396800 ms MarkObjects: 3.602600 ms  DeleteObjects: 0.253200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 37226.405842 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_05_BlackPaint.mat
+  artifactKey: Guid(cb1e293b30bd9c648be7b58cd1f373b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_05_BlackPaint.mat using Guid(cb1e293b30bd9c648be7b58cd1f373b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2984af8f9cbc1f8d1c8b8f04d1998e') in 0.188535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_04_Sunless.mat
+  artifactKey: Guid(e1ec0e2320d2d4fb9a393769378ce0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_04_Sunless.mat using Guid(e1ec0e2320d2d4fb9a393769378ce0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c704b975f07431b869dcccd7ce64a423') in 0.042547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Meshes/Satyr_Female.fbx
+  artifactKey: Guid(eb41f175082d0794bbd3896887bab5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Meshes/Satyr_Female.fbx using Guid(eb41f175082d0794bbd3896887bab5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ad3d2fe57159673e86072f68ee43ac') in 0.125306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_27_Chestnut.mat
+  artifactKey: Guid(ad530b7cc39f37245968f992226963d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_27_Chestnut.mat using Guid(ad530b7cc39f37245968f992226963d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578a9626a68fa985e4b684a300a29b6c') in 0.067488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_02.mat
+  artifactKey: Guid(fa95802f80bd745cfb5e9c89f7e22341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_02.mat using Guid(fa95802f80bd745cfb5e9c89f7e22341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9e318fdbaee851bea6e30914f9fd04') in 0.029420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Greek Monster Pack/Cyclops/Materials/Cyclops_Body_05.mat
+  artifactKey: Guid(849eddbbe4212e04b9038772bce04c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Cyclops/Materials/Cyclops_Body_05.mat using Guid(849eddbbe4212e04b9038772bce04c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a7cc258a31fb771aa18b206c8f34a55') in 0.064261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_03.mat
+  artifactKey: Guid(33ab377b49aa14f6fae6e5bac230a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_03.mat using Guid(33ab377b49aa14f6fae6e5bac230a5d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4858cc355bd295b531337541afcf95') in 0.055558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Greek Monster Pack/Cyclops/Materials/Cyclops_Body_03.mat
+  artifactKey: Guid(a18bc862113d17b4d8ebe237de827b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Cyclops/Materials/Cyclops_Body_03.mat using Guid(a18bc862113d17b4d8ebe237de827b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5d8a6a589d139926c6a095798e8e413') in 0.044311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_02_Sunless.mat
+  artifactKey: Guid(99a400087584f4263b1a8979d6007ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_02_Sunless.mat using Guid(99a400087584f4263b1a8979d6007ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceff3cb3fde32f0209541d3f594e7b1c') in 0.076411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000728 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_23_Grey.mat
+  artifactKey: Guid(202a6d8413381444bbf5fad86b33a89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_23_Grey.mat using Guid(202a6d8413381444bbf5fad86b33a89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc1356b36482e902e5f424ae6ac8b68') in 0.041848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_20_Black.mat
+  artifactKey: Guid(de66fb5b126d2be4287b2ec87f69e7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_20_Black.mat using Guid(de66fb5b126d2be4287b2ec87f69e7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d31f017b613275ddd1ea53d2028512') in 0.043913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_25_Chestnut.mat
+  artifactKey: Guid(a56fca37e57c2e64db01a6b33e3d455f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_25_Chestnut.mat using Guid(a56fca37e57c2e64db01a6b33e3d455f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72ec8d30edff506ba36972a3f4cb878c') in 0.074944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_18_White.mat
+  artifactKey: Guid(e9bfbe20340fef14cafd756960bdcc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_18_White.mat using Guid(e9bfbe20340fef14cafd756960bdcc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafa8e03ddf376ef506908593fdfafb5') in 0.068249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_20_Black.mat
+  artifactKey: Guid(e18f43c3c9039bb429d1daf0d2eac1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_20_Black.mat using Guid(e18f43c3c9039bb429d1daf0d2eac1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85bc437b60d994bd0a7f11c4b44a169b') in 0.067528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_19_Black.mat
+  artifactKey: Guid(6a3c4c6cd3899424b8618853aba448da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_19_Black.mat using Guid(6a3c4c6cd3899424b8618853aba448da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039a1843c70521f40196f785368a83fc') in 0.045915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_02_BayPaint.mat
+  artifactKey: Guid(e56400e54caf6b34f9f0ba92cd49a23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_02_BayPaint.mat using Guid(e56400e54caf6b34f9f0ba92cd49a23d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58423fb3104507c28d3096e2373744da') in 0.064507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_06_Brown.mat
+  artifactKey: Guid(3ce703e3515e625458fda0ab62861305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_06_Brown.mat using Guid(3ce703e3515e625458fda0ab62861305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a404a9483191f1689d6fd52636537ceb') in 0.067677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_18_LightGrey.mat
+  artifactKey: Guid(441cf87e547072241b98d76e5133da9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_18_LightGrey.mat using Guid(441cf87e547072241b98d76e5133da9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac9dd0ad1ec891e50b11bf2acc1cb22') in 0.041667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_02_LightBlue.mat
+  artifactKey: Guid(b60617e1fc8fb774dae310ae9f29d98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_02_LightBlue.mat using Guid(b60617e1fc8fb774dae310ae9f29d98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21482d1d04e87fdf616cbee9a40edf47') in 0.027582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Clothing/Common_Clothing_BaseColor_05_White.mat
+  artifactKey: Guid(666ecc2f489bcb146b3ac4a8ff708232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Clothing/Common_Clothing_BaseColor_05_White.mat using Guid(666ecc2f489bcb146b3ac4a8ff708232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24812284c5da350d9a8529a82494a6f9') in 0.029026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_27_Chestnut.mat
+  artifactKey: Guid(fc5dda0346980ea44906956c5a2907b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_27_Chestnut.mat using Guid(fc5dda0346980ea44906956c5a2907b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f68ceff81fa8cb7ad7066620261b966d') in 0.058596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Male/Human/HalfSpider_Male_HumanBody_02.mat
+  artifactKey: Guid(f01c8fe5e5db217498755dd930e405bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Male/Human/HalfSpider_Male_HumanBody_02.mat using Guid(f01c8fe5e5db217498755dd930e405bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4761d1bc4dfea4ad4c63552ee8f5d5b') in 0.068197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_33_White.mat
+  artifactKey: Guid(e9d72904176b0cc4b802779226e8ce48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_33_White.mat using Guid(e9d72904176b0cc4b802779226e8ce48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5fe740519b4bb81e018de199b6072a') in 0.045810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_14_TanPaint.mat
+  artifactKey: Guid(e08d0f79552c8ca47bcfa0c3a3a2c151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_14_TanPaint.mat using Guid(e08d0f79552c8ca47bcfa0c3a3a2c151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d85da86068678a76beb2032ebbe2df9') in 0.068456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_03_Green.mat
+  artifactKey: Guid(f426f5a4bb3ba214d815abe50e72c89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_03_Green.mat using Guid(f426f5a4bb3ba214d815abe50e72c89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a07331ac62a6841142730616b1341ef') in 0.037175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_17_Bay.mat
+  artifactKey: Guid(cae5ffb1bdf52d642a64c6a77a735f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_17_Bay.mat using Guid(cae5ffb1bdf52d642a64c6a77a735f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2489f1ec86ce0fbcc82efab02fc2dc9') in 0.089920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_10_ChestnutPaint.mat
+  artifactKey: Guid(e19855f5592508b4a852a5db6dcc1fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_10_ChestnutPaint.mat using Guid(e19855f5592508b4a852a5db6dcc1fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a017a3a27a510faa3fdcd91705583a1') in 0.043897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_25_Chestnut.mat
+  artifactKey: Guid(50885eeace3a5f14aa067f785e17f7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_25_Chestnut.mat using Guid(50885eeace3a5f14aa067f785e17f7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4578b8414184595730546f608d1c58') in 0.052996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_13_TanPaint.mat
+  artifactKey: Guid(a6e941669655037458817fe28c247cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_13_TanPaint.mat using Guid(a6e941669655037458817fe28c247cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4695fd4555cf2b3fdae634af2d77674a') in 0.064395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_01_Blue.mat
+  artifactKey: Guid(f7ed803b453f6a14eaed6479369dacc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_01_Blue.mat using Guid(f7ed803b453f6a14eaed6479369dacc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bbf50a34cb63769654a5c35a66c410a') in 0.050384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_03_Green.mat
+  artifactKey: Guid(bc7718321c8d65343979050454127089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_03_Green.mat using Guid(bc7718321c8d65343979050454127089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8a1635aa50349477edbf0660c2e125') in 0.036775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_16_White.mat
+  artifactKey: Guid(eab188c02cbb4db4db922e8b98bca695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_16_White.mat using Guid(eab188c02cbb4db4db922e8b98bca695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc760c43acba52fbd02b17c0957f745') in 0.055602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_19_Black.mat
+  artifactKey: Guid(b030b8624f160614b8f1d788d47b9c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_19_Black.mat using Guid(b030b8624f160614b8f1d788d47b9c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9696388203619179849652a0aaf2f1ea') in 0.108586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_17_TropicalRed.mat
+  artifactKey: Guid(947265062993a504c9b0b238dc16135e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_17_TropicalRed.mat using Guid(947265062993a504c9b0b238dc16135e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52acfd81ae987f2e4bd0de0bdc47e37') in 0.123843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_17_Bay.mat
+  artifactKey: Guid(c50fc8c3fbf9dd44bab90357a25aeb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_17_Bay.mat using Guid(c50fc8c3fbf9dd44bab90357a25aeb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b260be2d1be561bebed1adefe0123ab2') in 0.050955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_17_Bay.mat
+  artifactKey: Guid(0e853ea6cad28fd4489215d9b07b658c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_17_Bay.mat using Guid(0e853ea6cad28fd4489215d9b07b658c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77858edb0ac5e92d0c8e0928eb6f064') in 0.081328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_05_BlackPaint.mat
+  artifactKey: Guid(dca84e054ac470140bd70fe96c4f8c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_05_BlackPaint.mat using Guid(dca84e054ac470140bd70fe96c4f8c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04d834dc734defd32bfa93ddbdf1692') in 0.088437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_06_BlackPaint.mat
+  artifactKey: Guid(b3a95b19e3708b3428225e5371c4dffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_06_BlackPaint.mat using Guid(b3a95b19e3708b3428225e5371c4dffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bb528e2b6fe1f131fda4de1b02cda44') in 0.071141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/VillageAssets/RomanCityPack1Lite/Models/Roman/Materials/Canvas.mat
+  artifactKey: Guid(490c233e685124994ae1f445dca7fba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VillageAssets/RomanCityPack1Lite/Models/Roman/Materials/Canvas.mat using Guid(490c233e685124994ae1f445dca7fba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a55dac4eff8cf009b5737ef668cd2f8') in 0.030592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_16_Bay.mat
+  artifactKey: Guid(2d0085815e3bcd34580ebc3cdb8260d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_16_Bay.mat using Guid(2d0085815e3bcd34580ebc3cdb8260d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0591a3512e14ec473b63b856ef55e790') in 0.086960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_32_White.mat
+  artifactKey: Guid(c3362341dbfac6a478591b4d1f1605d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_32_White.mat using Guid(c3362341dbfac6a478591b4d1f1605d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54c3c4e1e16d1483d9b70c436427fd89') in 0.083713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_14_ChestnutPaint.mat
+  artifactKey: Guid(0a52ed94bd368664d82212ce45d15e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_14_ChestnutPaint.mat using Guid(0a52ed94bd368664d82212ce45d15e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28f68586585c5d12adcd176b82f2b457') in 0.069857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Greek Monster Pack/Common/Meshes/Female/Female_Hair_Shaggy.fbx
+  artifactKey: Guid(1b899fbcd2825d942945bca57a5b6110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Meshes/Female/Female_Hair_Shaggy.fbx using Guid(1b899fbcd2825d942945bca57a5b6110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3594f1a2828249a59ece16bbdd34a518') in 0.039042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_11_SeaBlue.mat
+  artifactKey: Guid(2e666a92c8ea5db4cb4dfb2700f4b1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_11_SeaBlue.mat using Guid(2e666a92c8ea5db4cb4dfb2700f4b1aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98131b532e8cf5b48327bd5b3bc8396') in 0.024766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_33_White.mat
+  artifactKey: Guid(cc31c28b54a34774d8ab574d55352aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_33_White.mat using Guid(cc31c28b54a34774d8ab574d55352aaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f065f2bcbb7e6041163d4f5662037cd') in 0.060689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/VillageAssets/GreekPack1Lite/Models/Materials/Greek_Dirt_1.mat
+  artifactKey: Guid(56b629314517e40929c83b1b37d23e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VillageAssets/GreekPack1Lite/Models/Materials/Greek_Dirt_1.mat using Guid(56b629314517e40929c83b1b37d23e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2587ecbb0c94b48c5a2891203edd82de') in 0.041555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_18_TropicalRed.mat
+  artifactKey: Guid(e4def09ea0b80a847bd7340370d78f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_18_TropicalRed.mat using Guid(e4def09ea0b80a847bd7340370d78f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1331439be3e0f53e374b6c55e77d89ee') in 0.079214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_05_Brown.mat
+  artifactKey: Guid(b7b0c65be70674b4f89297fc9848e266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_05_Brown.mat using Guid(b7b0c65be70674b4f89297fc9848e266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d9265967d5618bc82eca1ee470eb43') in 0.021962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_13_Tan.mat
+  artifactKey: Guid(6c7926af60875c744abc260efc9011b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_13_Tan.mat using Guid(6c7926af60875c744abc260efc9011b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8cf3b9449564e9837f4120fd6c6abb') in 0.043011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_15_Pink.mat
+  artifactKey: Guid(1ef29e301ceafa74487fb9e65b609ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_15_Pink.mat using Guid(1ef29e301ceafa74487fb9e65b609ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c8043539cee2518f6dfdfcc19c4e4e') in 0.053204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_17_White.mat
+  artifactKey: Guid(4d01fee8f31676443b72cb2c90a247d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_17_White.mat using Guid(4d01fee8f31676443b72cb2c90a247d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46e1e96a99cf23b18a3ada231afb5939') in 0.042231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_15_Gold.mat
+  artifactKey: Guid(48c2cc31d97f05f4d9c228ab24621bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_15_Gold.mat using Guid(48c2cc31d97f05f4d9c228ab24621bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23830da5eb61ae377fa40c972f949016') in 0.058056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_34_BrownHues.mat
+  artifactKey: Guid(e6cfd6dfd99908c44be62854dcf95797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_34_BrownHues.mat using Guid(e6cfd6dfd99908c44be62854dcf95797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '297eb92c04cb08cdfc5e16ff3326b1bc') in 0.204630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_13_Gold.mat
+  artifactKey: Guid(428253f536510aa49bccc55f35dfa5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_13_Gold.mat using Guid(428253f536510aa49bccc55f35dfa5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34a6b7f9ca91fcfed342c12a2756864c') in 0.053282 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_14_WhiteBlack.mat
+  artifactKey: Guid(1f2d275917c86ca428ddb1dd80a5da9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_14_WhiteBlack.mat using Guid(1f2d275917c86ca428ddb1dd80a5da9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42137d3e37331b49817cc8f2ca9ee7eb') in 0.121898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_29_Chestnut.mat
+  artifactKey: Guid(bffadb9663147db4785e05b159714267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_29_Chestnut.mat using Guid(bffadb9663147db4785e05b159714267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd184ee1a9bf7b3ef15ec7874ffa77095') in 0.108954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_20_Black.mat
+  artifactKey: Guid(be8d5e0078e880a4ab9dad91ee78ec8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_20_Black.mat using Guid(be8d5e0078e880a4ab9dad91ee78ec8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e0e383dcce408ee53ebe0fb5ad37c18') in 0.076412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_14_TanPaint.mat
+  artifactKey: Guid(a351d3d981b662d4e852d776a79f74c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_14_TanPaint.mat using Guid(a351d3d981b662d4e852d776a79f74c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e8969b7e93c0d799519ad6d4708257') in 0.061299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_11_TanPaint.mat
+  artifactKey: Guid(31e14ebd3874fe74596dbf722717f788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_11_TanPaint.mat using Guid(31e14ebd3874fe74596dbf722717f788) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d871ac28961f696d9a028cacac7864') in 0.075253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_10_TanPaint.mat
+  artifactKey: Guid(76524a7f4954258439b3a34fd2146fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_10_TanPaint.mat using Guid(76524a7f4954258439b3a34fd2146fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d9efaa1ab302007eb317720f371de62') in 0.065455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Greek Monster Pack/Giant/Materials/Male/Giant_Male_Body_03.mat
+  artifactKey: Guid(ae9239373bc18f2499aa71c305fa1452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Giant/Materials/Male/Giant_Male_Body_03.mat using Guid(ae9239373bc18f2499aa71c305fa1452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a08cd2fb4dacc978aef0dac8a08bca13') in 0.070487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_18_LightGrey.mat
+  artifactKey: Guid(622a7ff9c7e1a644596e50c87dedf499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_18_LightGrey.mat using Guid(622a7ff9c7e1a644596e50c87dedf499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d6f4573608ea02e0a7a59128e41d21') in 0.031267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_30_Chestnut.mat
+  artifactKey: Guid(310681c8d5e51714eafb3ac6fc34297e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_30_Chestnut.mat using Guid(310681c8d5e51714eafb3ac6fc34297e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a8368dd134c8c1dc643f87ecc3f2c7') in 0.068155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_29_Tan.mat
+  artifactKey: Guid(05b6a3c2bbec21840918bfbb70a52f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_29_Tan.mat using Guid(05b6a3c2bbec21840918bfbb70a52f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1f23cf403c7b3572b9e608f24822cc') in 0.073743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_27_Tan.mat
+  artifactKey: Guid(ed1bc4d47ba4d554c8ae10bd8825ec08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_27_Tan.mat using Guid(ed1bc4d47ba4d554c8ae10bd8825ec08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f87a71ad583e7f5e90074c998f9712') in 0.074129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_01_BlackRed.mat
+  artifactKey: Guid(63780e42010741441b886fdb9f86407e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_01_BlackRed.mat using Guid(63780e42010741441b886fdb9f86407e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0887a87c4477ba774b14fc0e9b4af902') in 0.064196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_33_White.mat
+  artifactKey: Guid(ae4495ee0b949f747a19315e72f13d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_33_White.mat using Guid(ae4495ee0b949f747a19315e72f13d64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf3b49bb7d7ab1252aabfbc67586bd7') in 0.098837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_26_Chestnut.mat
+  artifactKey: Guid(5664733cf8a52064cb0a7e148956b65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_26_Chestnut.mat using Guid(5664733cf8a52064cb0a7e148956b65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd785e1e79ef953168221ece0ea4add') in 0.048834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_10_MagentaGreen.mat
+  artifactKey: Guid(d303e188f180a86419a6abf6d1bca3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_10_MagentaGreen.mat using Guid(d303e188f180a86419a6abf6d1bca3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d8b1fe15bf164a9a3b02e69779f9d8') in 0.091896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Greek Monster Pack/Cyclops/Materials/Cyclops_Body_01.mat
+  artifactKey: Guid(1040de4b770ee6b42ba306f106d27195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Cyclops/Materials/Cyclops_Body_01.mat using Guid(1040de4b770ee6b42ba306f106d27195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc4c61a65128bbd689cc4386d584bc9a') in 0.044818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_28_Tan.mat
+  artifactKey: Guid(d41432b8a67febc46a6a4c2bdced914e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_28_Tan.mat using Guid(d41432b8a67febc46a6a4c2bdced914e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c979197ddade7d0a78d521e94fe22fc1') in 0.050006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_07_WhiteBlack.mat
+  artifactKey: Guid(a82a25c8dcd79dd408d44fcb2a0d7580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_07_WhiteBlack.mat using Guid(a82a25c8dcd79dd408d44fcb2a0d7580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c0b2c2a757e97dbc61dd1d4f151e45') in 0.065362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_18_Bay.mat
+  artifactKey: Guid(9d9bba2a2c52f044e8c65731d6ffbd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_18_Bay.mat using Guid(9d9bba2a2c52f044e8c65731d6ffbd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '112ec1866671ca17ba973b300a909138') in 0.065438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_28_Tan.mat
+  artifactKey: Guid(2332b9b4c5b35bf4196735201fa1dbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_28_Tan.mat using Guid(2332b9b4c5b35bf4196735201fa1dbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b3d3e469d5e4fe7f877644e94e11226') in 0.029763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_08_GreenYellow.mat
+  artifactKey: Guid(9ffe30b949f68b54787fd4851c38ea69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_08_GreenYellow.mat using Guid(9ffe30b949f68b54787fd4851c38ea69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d56ad317f6bdd67772857f34f342950') in 0.046496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Fantasy Forest/Materials/sunray2.mat
+  artifactKey: Guid(1b6a75f5b4082bc42b2355eeeae6739f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Forest/Materials/sunray2.mat using Guid(1b6a75f5b4082bc42b2355eeeae6739f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7d6d173e5d5f3c7397eff65aaab43f') in 0.034772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Greek Monster Pack/Giant/Materials/Female/Giant_Female_Body_04.mat
+  artifactKey: Guid(1abe07812c2c31d428d147d0ae686c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Giant/Materials/Female/Giant_Female_Body_04.mat using Guid(1abe07812c2c31d428d147d0ae686c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd804d24cb7b876aeb45c7599a317af49') in 0.102210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e85d55384b22641579099d0f1ce7e8') in 0.082333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_23_Grey.mat
+  artifactKey: Guid(5e5bb33fd5e4cd943b6504067097c3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_23_Grey.mat using Guid(5e5bb33fd5e4cd943b6504067097c3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b06ef3f6868283c01f0df017e0acfa') in 0.065052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_21_Black.mat
+  artifactKey: Guid(d6265afb123258944af1506465de2592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_21_Black.mat using Guid(d6265afb123258944af1506465de2592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68d5e352f3aeb77e64d208133e00cd3') in 0.061538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_11_Red.mat
+  artifactKey: Guid(931bd00c36b9bb749859c7ee7b91c9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_11_Red.mat using Guid(931bd00c36b9bb749859c7ee7b91c9c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94fafacf36022c74e4a86c02fb3e58fd') in 0.047067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_12_ChestnutPaint.mat
+  artifactKey: Guid(030e7a8614a4b2745bc3fd8606873b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_12_ChestnutPaint.mat using Guid(030e7a8614a4b2745bc3fd8606873b80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09dd4ed51fdba03ea4ad664cf196d7a0') in 0.063060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_10_Red.mat
+  artifactKey: Guid(5151e808ddcbfdf4e82966cd7e8a027f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_10_Red.mat using Guid(5151e808ddcbfdf4e82966cd7e8a027f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f62f77d431120d6ed7544dc52c8b2c') in 0.044664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_22_Violet.mat
+  artifactKey: Guid(aec39f1ef7264ef48b5a6638c1ff7628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_22_Violet.mat using Guid(aec39f1ef7264ef48b5a6638c1ff7628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1770ecef8a84f47a4c889129286c361a') in 0.013324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_21_TropicalBlue.mat
+  artifactKey: Guid(8ce81711215222f4ca7fcbaa6e43e227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_21_TropicalBlue.mat using Guid(8ce81711215222f4ca7fcbaa6e43e227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4766e6d9c3aaeaa02a27d4f7b946fa51') in 0.090705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_27_Tan.mat
+  artifactKey: Guid(3eef31569df2c77489de5da29a88b41a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_27_Tan.mat using Guid(3eef31569df2c77489de5da29a88b41a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af451c3a41a2d81c299ccd8b321e9bf') in 0.049203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_37_Brown.mat
+  artifactKey: Guid(e5e5b02eff4d0664bb9264c8a732423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_37_Brown.mat using Guid(e5e5b02eff4d0664bb9264c8a732423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b5b64b0a6f0fe2c93d3a97dd9c8638d') in 0.072589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_14_ChestnutPaint.mat
+  artifactKey: Guid(92d4c2217ded3674595c71219247e2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_14_ChestnutPaint.mat using Guid(92d4c2217ded3674595c71219247e2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '147b8ef1c4b08177473e27a44232e786') in 0.055111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_04_TanBlack.mat
+  artifactKey: Guid(af8c6ac5e7f4fa14fb38922fddb34c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_04_TanBlack.mat using Guid(af8c6ac5e7f4fa14fb38922fddb34c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b46be36657ecf42407858dd01fb9de4') in 0.045197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_19_Black.mat
+  artifactKey: Guid(f88dcd4eeec862d4a99cd2caa42e3377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_19_Black.mat using Guid(f88dcd4eeec862d4a99cd2caa42e3377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0e7c4f2a0c9ebb4e0aa22102f9b991') in 0.009857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_19_Black.mat
+  artifactKey: Guid(5fdab38dc4ef516489967c0dbe661f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_19_Black.mat using Guid(5fdab38dc4ef516489967c0dbe661f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f1e41b9173722c06a89d536f6d74c76') in 0.073835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_08_GreyPaint.mat
+  artifactKey: Guid(7aff4c6cc65bf68439346452a873b4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_08_GreyPaint.mat using Guid(7aff4c6cc65bf68439346452a873b4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abd7800e7a34b61f74447e59c6445f37') in 0.075608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_24_Grey.mat
+  artifactKey: Guid(c348d921ba0212144a94a93281debd87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_24_Grey.mat using Guid(c348d921ba0212144a94a93281debd87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c580538ffe6c214518155af0440bae76') in 0.046013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_15_WhiteBlack.mat
+  artifactKey: Guid(d954cb00d8511e64c91f6d4d0f86c059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_15_WhiteBlack.mat using Guid(d954cb00d8511e64c91f6d4d0f86c059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db20e6fa1d1669a8dcb8558a1e257a88') in 0.117309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_15_ChestnutPaint.mat
+  artifactKey: Guid(a23d4faa48396814481b6fedf14c9cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_15_ChestnutPaint.mat using Guid(a23d4faa48396814481b6fedf14c9cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '356bed34f5f0b4fe2268bb5d6d561f9e') in 0.068786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_15_TanPaint.mat
+  artifactKey: Guid(702eea6096148494ea6152bf091d1ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_15_TanPaint.mat using Guid(702eea6096148494ea6152bf091d1ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '899ccc117c76321a3009ab15b33e9058') in 0.050216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_14_TanPaint.mat
+  artifactKey: Guid(315c0b96c97f9a04783852a69d60b65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_14_TanPaint.mat using Guid(315c0b96c97f9a04783852a69d60b65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '441602c0e5d4ecba4aecd552df4ff656') in 0.106319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_19_VeryLightGrey.mat
+  artifactKey: Guid(3e0d4042e5ad74b409b9aafbefe7cac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_19_VeryLightGrey.mat using Guid(3e0d4042e5ad74b409b9aafbefe7cac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb21de2e5c7f847838432694ef95064d') in 0.069971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Resources/Materials/ForestTerrain.mat
+  artifactKey: Guid(22fc4720adc54384ab4f6e677d73f694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Materials/ForestTerrain.mat using Guid(22fc4720adc54384ab4f6e677d73f694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c089ccf9fcd5679609835630e6552f5a') in 0.122781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_02_Black.mat
+  artifactKey: Guid(d0f2a3eb936dfa447876c65a08f3eebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_02_Black.mat using Guid(d0f2a3eb936dfa447876c65a08f3eebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5488d3c19bb286075dd2920ed87acae9') in 0.056994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_28_Tan.mat
+  artifactKey: Guid(6ac98dbe9e8bc13498e16cd160615c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_28_Tan.mat using Guid(6ac98dbe9e8bc13498e16cd160615c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8ded09bb26a2abeb24e1e114f44c7a3') in 0.077555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Greek Monster Pack/Cyclops/Materials/Cyclops_Body_02.mat
+  artifactKey: Guid(2fa341372139484419cce4ebaf0fbb21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Cyclops/Materials/Cyclops_Body_02.mat using Guid(2fa341372139484419cce4ebaf0fbb21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e46ae14683b1cb443da4236b834960') in 0.072393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_22_TropicalYellow.mat
+  artifactKey: Guid(d5023be889f705c4581d4ee89b53a3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_22_TropicalYellow.mat using Guid(d5023be889f705c4581d4ee89b53a3ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65734f01731214594f0fa89f6289c1f1') in 0.090649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_15_ChestnutPaint.mat
+  artifactKey: Guid(6f89c6a6d502c1d4c8ea21b952405dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_15_ChestnutPaint.mat using Guid(6f89c6a6d502c1d4c8ea21b952405dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f0dd228a31326a1e230720becada9b') in 0.046711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/VillageAssets/GreekPack1Lite/Models/Materials/Greek_Stone_1.mat
+  artifactKey: Guid(7ed566b1767084d5cbcd1b3b150e3633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VillageAssets/GreekPack1Lite/Models/Materials/Greek_Stone_1.mat using Guid(7ed566b1767084d5cbcd1b3b150e3633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e7c27d054b8fb002c168d4107a9146') in 0.033363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Greek Monster Pack/Cyclops/Meshes/Clothing_Skirt_02_Cyclops.fbx
+  artifactKey: Guid(254a22a748d0ab148b344e6638796aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Cyclops/Meshes/Clothing_Skirt_02_Cyclops.fbx using Guid(254a22a748d0ab148b344e6638796aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c41ecde9a5c9c7087c965135e00326') in 0.041332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_06_Brown.mat
+  artifactKey: Guid(aa53a7286b30bf94e890cd7ae6fa3320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_06_Brown.mat using Guid(aa53a7286b30bf94e890cd7ae6fa3320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df399dfb7bfb7a304b665fe87c816c9') in 0.059221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_21_Black.mat
+  artifactKey: Guid(5fb48d1eeec791b4d846d0b608976fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_21_Black.mat using Guid(5fb48d1eeec791b4d846d0b608976fe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92724ff1ebf105345fb703d31dde28d5') in 0.059420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_09_WhiteRed.mat
+  artifactKey: Guid(c61b859724f422341a3078d531822012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_09_WhiteRed.mat using Guid(c61b859724f422341a3078d531822012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2eeccd75ef65ba95c05f667fe64faf1') in 0.067998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_07_GreyPaint.mat
+  artifactKey: Guid(6d85f8917ca40a64287784f667c024f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_07_GreyPaint.mat using Guid(6d85f8917ca40a64287784f667c024f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b8aa7f900c23322977326f6d2f848e') in 0.067938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_26_Grey.mat
+  artifactKey: Guid(7251e3a07d2a67a4bb781af2ba5ff37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_26_Grey.mat using Guid(7251e3a07d2a67a4bb781af2ba5ff37e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2752579df74c4252ee17bf740f65d0ac') in 0.040511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_04_BlackPaint.mat
+  artifactKey: Guid(00e725da05b78d74b9f884d2a40cf0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_04_BlackPaint.mat using Guid(00e725da05b78d74b9f884d2a40cf0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c01b897463ff64a0033074e19f23c2e') in 0.060441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_16_DeepViolet.mat
+  artifactKey: Guid(0775562a6bdbfc04194369697523e135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_16_DeepViolet.mat using Guid(0775562a6bdbfc04194369697523e135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f741f170d883fb3699546d828d97cdd3') in 0.025816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_28_TropicalBluePink.mat
+  artifactKey: Guid(8e14e3bfa6505a648b062789ba2cee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_28_TropicalBluePink.mat using Guid(8e14e3bfa6505a648b062789ba2cee5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a79916722423a625e1bbf3d3a4b7477f') in 0.090259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Clothing/Common_Clothing_BaseColor_06_Black.mat
+  artifactKey: Guid(8fb7686bb37db8f43b57a47aca2267fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Clothing/Common_Clothing_BaseColor_06_Black.mat using Guid(8fb7686bb37db8f43b57a47aca2267fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7577c54970ae315a36b372e60368a8a9') in 0.026645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Hair/Common_Hair_04_LightBrown.mat
+  artifactKey: Guid(fce25934240a5a44d98cb9e4550cf003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Hair/Common_Hair_04_LightBrown.mat using Guid(fce25934240a5a44d98cb9e4550cf003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c21b27dc98035363607cb278089e7cb7') in 0.014029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_18_Bay.mat
+  artifactKey: Guid(db772d17633995c46b81029d40a7a434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_18_Bay.mat using Guid(db772d17633995c46b81029d40a7a434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '171937248615a4f66b7f120171420704') in 0.071663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_04_BlackPaint.mat
+  artifactKey: Guid(636a04e7594ad144384aa92eca2081b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_04_BlackPaint.mat using Guid(636a04e7594ad144384aa92eca2081b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e773f3f74854c71d2be0d53be9d5ab') in 0.055777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Fantasy Forest/Materials/moonray.mat
+  artifactKey: Guid(57ec9b2899461bf47a896b9695539f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Forest/Materials/moonray.mat using Guid(57ec9b2899461bf47a896b9695539f65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099821dcff95476727b0cc1f9eed8382') in 0.040175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_09_Gold.mat
+  artifactKey: Guid(6d0f0de0b8a922e4a96ec87f0cc73390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_09_Gold.mat using Guid(6d0f0de0b8a922e4a96ec87f0cc73390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c855ff2639a4bf3523a076efba0784') in 0.031116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_12_GreenTan.mat
+  artifactKey: Guid(f3285b89fd6ed484aa18254d7f3ebd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_12_GreenTan.mat using Guid(f3285b89fd6ed484aa18254d7f3ebd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8074808266e31f1b54dce747b9f399f') in 0.037122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_27_TropicalGreen.mat
+  artifactKey: Guid(c113d29291e8b234a9392f4ef1adee62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_27_TropicalGreen.mat using Guid(c113d29291e8b234a9392f4ef1adee62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5cd260abae02a5a06be00c273a5e39b') in 0.135194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_10_MagentaGreen.mat
+  artifactKey: Guid(6c249e68645f1824aa9e15a56dbe818f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Female/Spider/HalfSpider_Female_SpiderBody_10_MagentaGreen.mat using Guid(6c249e68645f1824aa9e15a56dbe818f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef7169df50079a849f8017cd4fdbb556') in 0.052625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_01_GreenTan.mat
+  artifactKey: Guid(937b453716484a8408c192783533e181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_01_GreenTan.mat using Guid(937b453716484a8408c192783533e181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0db64b8f10e2830fd1405b04f9447e9') in 0.073757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_28_TropicalBluePink.mat
+  artifactKey: Guid(83566ddea4dac744eadefd458e625283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_28_TropicalBluePink.mat using Guid(83566ddea4dac744eadefd458e625283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5730aba7a7a84cbb9f7933f0bcd2250') in 0.065892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Greek Monster Pack/Giant/Materials/Male/Giant_Male_Body_05.mat
+  artifactKey: Guid(5cc7165fcb2ea7446a8c8eadba294982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Giant/Materials/Male/Giant_Male_Body_05.mat using Guid(5cc7165fcb2ea7446a8c8eadba294982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ee667d32cdb7a6801c6a645ec2e289') in 0.049080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Fantasy Forest/Materials/tree2.mat
+  artifactKey: Guid(04d8e25592fd9784c947e57cc7c13b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Forest/Materials/tree2.mat using Guid(04d8e25592fd9784c947e57cc7c13b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77bea36fc0abd613bdbafa746161a9aa') in 0.038956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Hair/Common_Hair_07_Red.mat
+  artifactKey: Guid(ab01b18e20de25b438b3905810760901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Hair/Common_Hair_07_Red.mat using Guid(ab01b18e20de25b438b3905810760901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2baa4c9ea5c2060e269bf0879135613') in 0.047977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_31_BloodRed.mat
+  artifactKey: Guid(a12a236d3570e5f4294b8b9c6d12c150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_31_BloodRed.mat using Guid(a12a236d3570e5f4294b8b9c6d12c150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea4c518feacf93ba3bef6e9fd69a6c0') in 0.103429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_16_DeepViolet.mat
+  artifactKey: Guid(b78b1f5a7dc36ea49b23f880a83cfd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_16_DeepViolet.mat using Guid(b78b1f5a7dc36ea49b23f880a83cfd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '955324712080e4b03d2f09bc2eb8ba62') in 0.059700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_24_TropicalYellow.mat
+  artifactKey: Guid(bb2243c30b804e2479afd754ece945a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_24_TropicalYellow.mat using Guid(bb2243c30b804e2479afd754ece945a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab0934e7f93eaea9ca3a48e7aaed72c') in 0.067939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Hair/Common_Hair_10_LightGrey.mat
+  artifactKey: Guid(c9c3b66bd40e20048a369b6bc71e5415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Hair/Common_Hair_10_LightGrey.mat using Guid(c9c3b66bd40e20048a369b6bc71e5415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7b20fa5e98e01eb64dfd5a5f87249a1') in 0.013024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_09_GreyPaint.mat
+  artifactKey: Guid(6d78a7317f96f61438214ed51dd6ba81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_09_GreyPaint.mat using Guid(6d78a7317f96f61438214ed51dd6ba81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3379d0635c19d96cf6ca7345cbb9cbe') in 0.071279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_07_Green.mat
+  artifactKey: Guid(19721d145c82dac4fa325c7bd0e14b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_07_Green.mat using Guid(19721d145c82dac4fa325c7bd0e14b69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c9ae069fbf8ca4cc0ac4c1c077e1e4a') in 0.051041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_11_BlackWhite.mat
+  artifactKey: Guid(4d690c2b6f6cdcd45b40ec82c5c8df4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_11_BlackWhite.mat using Guid(4d690c2b6f6cdcd45b40ec82c5c8df4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '397be57079b68ba4a7a6e41f93b1d726') in 0.092457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Hair/Common_Hair_09_Grey.mat
+  artifactKey: Guid(310e5b133f7f62a49b1fb7e5c0389967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Hair/Common_Hair_09_Grey.mat using Guid(310e5b133f7f62a49b1fb7e5c0389967) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38ee8a18f0b7214d3f4b558e6260a9e7') in 0.010431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Fantasy Forest/Materials/flower2.mat
+  artifactKey: Guid(5ba3d62985b28724ca75217f335f1d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Forest/Materials/flower2.mat using Guid(5ba3d62985b28724ca75217f335f1d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c90e50a4f213dc02c14c8e039b61f6') in 0.117253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_19_VeryLightGrey.mat
+  artifactKey: Guid(9b41c359bcf9df841a92f825887620c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Eye/Gorgon_Eye_19_VeryLightGrey.mat using Guid(9b41c359bcf9df841a92f825887620c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fab9b575348d271a18fe190963f9518') in 0.020637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Fantasy Forest/Materials/flower1.mat
+  artifactKey: Guid(dc7e9247495cd2849840ba247d9bd1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Forest/Materials/flower1.mat using Guid(dc7e9247495cd2849840ba247d9bd1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8395e54bf48ef36584fdc4ffac0bc5e2') in 0.031398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_32_White.mat
+  artifactKey: Guid(ad9443d8063122d42bbdc22ebaf338d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_32_White.mat using Guid(ad9443d8063122d42bbdc22ebaf338d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d729a0760b4e7f059dd8e9b0624fb5') in 0.067324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Greek Monster Pack/Giant/Materials/Female/Giant_Female_Body_01.mat
+  artifactKey: Guid(dd25d00995b66664fbfedbe027c2663e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Giant/Materials/Female/Giant_Female_Body_01.mat using Guid(dd25d00995b66664fbfedbe027c2663e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48d20467942c7b4bc4aa8211c517b38') in 0.042188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_18_Bay.mat
+  artifactKey: Guid(79b80bc6dd87fc346a5bd0573327166d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_18_Bay.mat using Guid(79b80bc6dd87fc346a5bd0573327166d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b98dd7cd02330ce2c8f286a80fa559a9') in 0.044595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Fantasy Forest/Materials/tree1.mat
+  artifactKey: Guid(80bd7949e548c0040afbf7db0c2eb638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Forest/Materials/tree1.mat using Guid(80bd7949e548c0040afbf7db0c2eb638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d814f262a5c9cd3fa8a935628a087cb') in 0.021388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_01_Sunless.mat
+  artifactKey: Guid(d48a7646f5d0547e889733d84b50cb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Skybox FREE/Cubemaps/Classic/FS000_Day_01_Sunless.mat using Guid(d48a7646f5d0547e889733d84b50cb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba22d6404df783d8c0e5763b9b599b5') in 0.051956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_29_TropicalBluePink.mat
+  artifactKey: Guid(f7acf88b56a1dd6489aeca63d0cfdabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_29_TropicalBluePink.mat using Guid(f7acf88b56a1dd6489aeca63d0cfdabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec0d448b7b8dc711b87094dedf15827') in 0.095662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_16_TropicalRed.mat
+  artifactKey: Guid(c2b24b97d20c10f42ace5b8b6c1bdbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_16_TropicalRed.mat using Guid(c2b24b97d20c10f42ace5b8b6c1bdbce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbab6ad2e34ad5e0df4074f10402c727') in 0.093279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Female/Human/HalfSpider_Female_HumanBody_01.mat
+  artifactKey: Guid(4e54742d3978ce14ebb1db86e8e3a468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Female/Human/HalfSpider_Female_HumanBody_01.mat using Guid(4e54742d3978ce14ebb1db86e8e3a468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f662d3698b17a8858ceb86b8e4418df') in 0.034162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_01_GreyWhite.mat
+  artifactKey: Guid(c7fc0cf1689fecc409c99094a63f1acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Body/Harpy_Body_01_GreyWhite.mat using Guid(c7fc0cf1689fecc409c99094a63f1acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b083d3caed3f3bdee62fd50288cc3aa8') in 0.081499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_08_Yellow.mat
+  artifactKey: Guid(65f410c159976d649be2351474485e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_08_Yellow.mat using Guid(65f410c159976d649be2351474485e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8dbf93d6b8129a4a8e519490810229') in 0.047092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_20_Black.mat
+  artifactKey: Guid(1731c9e8bc6208e469ca624a34287c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_20_Black.mat using Guid(1731c9e8bc6208e469ca624a34287c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57462949957f2371dfc0d6088d7a322c') in 0.074338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_17_Bay.mat
+  artifactKey: Guid(2bc6b3d3cd37e6745b47af8b179a6731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_17_Bay.mat using Guid(2bc6b3d3cd37e6745b47af8b179a6731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8f16935bb11267dfaa33b1809667267') in 0.063133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_24_Violet.mat
+  artifactKey: Guid(92fdf4bcdd71548438d69f13cec41b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Body/Gorgon_Body_24_Violet.mat using Guid(92fdf4bcdd71548438d69f13cec41b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7f4e11b7813c43b860a2f669731faeb') in 0.059309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_04_DarkGreen.mat
+  artifactKey: Guid(8ab78ca292be75b4bbc23739eedff1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Materials/Eye/Common_Eye_04_DarkGreen.mat using Guid(8ab78ca292be75b4bbc23739eedff1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691c5b8b96b019d7587f86cb23ea1180') in 0.078894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_03_BayPaint.mat
+  artifactKey: Guid(96486f0d86edda044a8bf4b976d0448b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_03_BayPaint.mat using Guid(96486f0d86edda044a8bf4b976d0448b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06091c8e8389ad01d76fd3bb287af520') in 0.081915 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_22_Grey.mat
+  artifactKey: Guid(be24a980852e064409169eda7e656896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_22_Grey.mat using Guid(be24a980852e064409169eda7e656896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12d19f257b29bf82040d9cf1420f8a0') in 0.075765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_13_Gold.mat
+  artifactKey: Guid(c070afca9f17c0c46a2287d727476297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Gorgon/Materials/Scales/Gorgon_Scale_13_Gold.mat using Guid(c070afca9f17c0c46a2287d727476297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b2735fe264a3b0149066ac1e603726') in 0.030133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Greek Monster Pack/Giant/Meshes/Clothing_Skirt_01_Giant.fbx
+  artifactKey: Guid(198cc4c6e49bc2640baec41dac4badc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Giant/Meshes/Clothing_Skirt_01_Giant.fbx using Guid(198cc4c6e49bc2640baec41dac4badc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f2e4b469cc8de779700cb36806c789') in 0.050477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_03_BlackYellow.mat
+  artifactKey: Guid(dcfb61340f8381a448e5b1dc1854a3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Half-Spider/Materials/Male/Spider/HalfSpider_Male_SpiderBody_03_BlackYellow.mat using Guid(dcfb61340f8381a448e5b1dc1854a3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9625f4c0ce1afa3486bdb17dbf3a9d58') in 0.060204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_17_Bay.mat
+  artifactKey: Guid(95749519b47ea0849957779fd8c63425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_17_Bay.mat using Guid(95749519b47ea0849957779fd8c63425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecc8ae403c4c718e2b92e64a191b97c9') in 0.062136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Greek Monster Pack/Demo/Materials/Demo_Metal.mat
+  artifactKey: Guid(8960c29ee9bd6c14cbab7161fce7184c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Demo/Materials/Demo_Metal.mat using Guid(8960c29ee9bd6c14cbab7161fce7184c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be28daa3f15cab365c4acbd4240db295') in 0.012962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Character_Elf/Materials/Character_Elf.mat
+  artifactKey: Guid(b74d32503f3e4e7479bf783065fddc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character_Elf/Materials/Character_Elf.mat using Guid(b74d32503f3e4e7479bf783065fddc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe5349de260073779aa50e476df068f') in 0.350883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_13_WhiteBlack.mat
+  artifactKey: Guid(50b50eba278acc842873e0ab9cfc3901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Harpy/Materials/Tailfeather/Harpy_TailFeathers_13_WhiteBlack.mat using Guid(50b50eba278acc842873e0ab9cfc3901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f84d5d6a4b447bc6c57e08c726bdb51c') in 0.103188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_26_Chestnut.mat
+  artifactKey: Guid(82c07e30b84e5ff4d9190bfa462081a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Female/Satyr_Female_Body_26_Chestnut.mat using Guid(82c07e30b84e5ff4d9190bfa462081a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37f63270ca59c16b483afd04bc5b18e3') in 0.067912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_21_Black.mat
+  artifactKey: Guid(a5b158597889b4e45be887253f70ee1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_21_Black.mat using Guid(a5b158597889b4e45be887253f70ee1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d27066a60c475f9677f45ab1ec01470') in 0.072940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_03_BayPaint.mat
+  artifactKey: Guid(f6a8e90c2d3e19f4a93ab41beda42f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_03_BayPaint.mat using Guid(f6a8e90c2d3e19f4a93ab41beda42f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8300986200c6686e0e161733a0e397d4') in 0.091824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_08_GreyPaint.mat
+  artifactKey: Guid(7a02d4619e4743149a810712e02647e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_08_GreyPaint.mat using Guid(7a02d4619e4743149a810712e02647e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b59ea0f58512d778fe314d7ccb71f04') in 0.061889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_13_TanPaint.mat
+  artifactKey: Guid(da5a0a0665fd6bf479cefe3cc5f0ff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Minotaur/Materials/Body/Minotaur_Body_13_TanPaint.mat using Guid(da5a0a0665fd6bf479cefe3cc5f0ff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a26584180167656ec83261223698bd32') in 0.071068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_21_Black.mat
+  artifactKey: Guid(cdc6dff46188d7f4ebc8b00c83b78020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Male/Centaur_Male_Body_21_Black.mat using Guid(cdc6dff46188d7f4ebc8b00c83b78020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70569a1390de4f483fb97bf2403c01f2') in 0.064283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_24_Grey.mat
+  artifactKey: Guid(dbbce36076539ac4eb032547ee86d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_24_Grey.mat using Guid(dbbce36076539ac4eb032547ee86d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd81bf490092405c5a874bc960511022') in 0.128166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Greek Monster Pack/Giant/Materials/Female/Giant_Female_Body_02.mat
+  artifactKey: Guid(20ec1a39bace00443afcfaf23eeef9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Giant/Materials/Female/Giant_Female_Body_02.mat using Guid(20ec1a39bace00443afcfaf23eeef9b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e977ca56e79f67a321423dc97b79cc7e') in 0.084572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_12_TanPaint.mat
+  artifactKey: Guid(494e516a9447782478401a97cd5534eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_12_TanPaint.mat using Guid(494e516a9447782478401a97cd5534eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7107ca14c65e0b989ba4490ef016e6f') in 0.058610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_21_Black.mat
+  artifactKey: Guid(dacf375f0eec0cb408d25a0d31b95bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_21_Black.mat using Guid(dacf375f0eec0cb408d25a0d31b95bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53536880abfcd8c54406040b2a1ca8d') in 0.060484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Meshes/Centaur_Male.fbx
+  artifactKey: Guid(e3e7889129aaee0429d9b8d202eaa20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Meshes/Centaur_Male.fbx using Guid(e3e7889129aaee0429d9b8d202eaa20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe95c9e1cc9b00edbd07973988b70e50') in 0.074817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_05_BlackPaint.mat
+  artifactKey: Guid(f364e0399598dd245b5b08dcf44c7d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Centaur/Materials/Female/Centaur_Female_Body_05_BlackPaint.mat using Guid(f364e0399598dd245b5b08dcf44c7d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3c9f29b1b0fe25b10026e87da1867ed') in 0.068047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_18_Bay.mat
+  artifactKey: Guid(ca003dea558c8f94388ed296148326ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Satyr/Materials/Male/Satyr_Male_Body_18_Bay.mat using Guid(ca003dea558c8f94388ed296148326ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fab3eef19e7dd7cc0309a0862b5325c') in 0.067867 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003029 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.937 seconds
+Domain Reload Profiling:
+	ReloadAssembly (937ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (737ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (256ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (329ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3719 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.6 KB). Loaded Objects now: 4289.
+Memory consumption went from 236.0 MB to 235.7 MB.
+Total: 3.344600 ms (FindLiveObjects: 0.417400 ms CreateObjectMapping: 0.200900 ms MarkObjects: 2.608900 ms  DeleteObjects: 0.116700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002782 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Domain Reload Profiling:
+	ReloadAssembly (926ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (726ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (256ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3719 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.7 KB). Loaded Objects now: 4304.
+Memory consumption went from 236.0 MB to 235.8 MB.
+Total: 3.962000 ms (FindLiveObjects: 0.490100 ms CreateObjectMapping: 0.467700 ms MarkObjects: 2.760000 ms  DeleteObjects: 0.243400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002141 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.909 seconds
+Domain Reload Profiling:
+	ReloadAssembly (909ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (709ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (262ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (288ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.5 KB). Loaded Objects now: 4320.
+Memory consumption went from 236.0 MB to 235.8 MB.
+Total: 4.477200 ms (FindLiveObjects: 0.588700 ms CreateObjectMapping: 0.318600 ms MarkObjects: 3.409200 ms  DeleteObjects: 0.159800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002209 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.907 seconds
+Domain Reload Profiling:
+	ReloadAssembly (908ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (706ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (304ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.3 KB). Loaded Objects now: 4335.
+Memory consumption went from 236.2 MB to 236.0 MB.
+Total: 2.766200 ms (FindLiveObjects: 0.348400 ms CreateObjectMapping: 0.204100 ms MarkObjects: 2.100400 ms  DeleteObjects: 0.112200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002386 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Domain Reload Profiling:
+	ReloadAssembly (937ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (743ms)
+			LoadAssemblies (79ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (343ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (224ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.4 KB). Loaded Objects now: 4350.
+Memory consumption went from 236.2 MB to 236.0 MB.
+Total: 2.964300 ms (FindLiveObjects: 0.319100 ms CreateObjectMapping: 0.239200 ms MarkObjects: 2.258900 ms  DeleteObjects: 0.146400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1543.844210 seconds.
+  path: Assets/Resources/Monsters/1_Gorgon.prefab
+  artifactKey: Guid(0d0242665ef18d24990afb434f72adc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Monsters/1_Gorgon.prefab using Guid(0d0242665ef18d24990afb434f72adc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '595b0c59f4a2f7389eaeedba185742df') in 0.652219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.187059 seconds.
+  path: Assets/Resources/Monsters/2_Satyr.prefab
+  artifactKey: Guid(80c8f5610aa4c5b4b884a227c87dfa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Monsters/2_Satyr.prefab using Guid(80c8f5610aa4c5b4b884a227c87dfa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c0c36a90300144aaccbf299ae6582e') in 0.535795 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003206 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.972 seconds
+Domain Reload Profiling:
+	ReloadAssembly (973ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (756ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (265ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (324ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.5 KB). Loaded Objects now: 4365.
+Memory consumption went from 236.5 MB to 236.3 MB.
+Total: 6.223400 ms (FindLiveObjects: 0.408600 ms CreateObjectMapping: 0.192700 ms MarkObjects: 5.508100 ms  DeleteObjects: 0.113400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002236 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.006 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1007ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (767ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (267ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (333ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.4 KB). Loaded Objects now: 4380.
+Memory consumption went from 236.5 MB to 236.3 MB.
+Total: 9.149200 ms (FindLiveObjects: 0.736000 ms CreateObjectMapping: 0.370800 ms MarkObjects: 7.700100 ms  DeleteObjects: 0.339500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003237 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1079ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (837ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (294ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (359ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.4 KB). Loaded Objects now: 4395.
+Memory consumption went from 236.6 MB to 236.3 MB.
+Total: 5.118000 ms (FindLiveObjects: 0.552900 ms CreateObjectMapping: 0.350100 ms MarkObjects: 3.994900 ms  DeleteObjects: 0.218200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002675 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.473 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1475ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (1155ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (409ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (504ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (342ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.3 KB). Loaded Objects now: 4410.
+Memory consumption went from 236.6 MB to 236.4 MB.
+Total: 6.122600 ms (FindLiveObjects: 1.151100 ms CreateObjectMapping: 0.710800 ms MarkObjects: 3.936800 ms  DeleteObjects: 0.321600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002585 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.436 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1437ms)
+		BeginReloadAssembly (170ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1147ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (368ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (530ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (355ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.4 KB). Loaded Objects now: 4425.
+Memory consumption went from 236.6 MB to 236.4 MB.
+Total: 5.861000 ms (FindLiveObjects: 1.105800 ms CreateObjectMapping: 0.569500 ms MarkObjects: 3.776500 ms  DeleteObjects: 0.406600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1484.552668 seconds.
+  path: Assets/Resources/Monsters/1_Gorgon.prefab
+  artifactKey: Guid(0d0242665ef18d24990afb434f72adc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Monsters/1_Gorgon.prefab using Guid(0d0242665ef18d24990afb434f72adc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82719dac948d02680cf60f3bbff72ec') in 1.071943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.475956 seconds.
+  path: Assets/Resources/Monsters/2_Satyr.prefab
+  artifactKey: Guid(80c8f5610aa4c5b4b884a227c87dfa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Monsters/2_Satyr.prefab using Guid(80c8f5610aa4c5b4b884a227c87dfa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f088c21c45318e473dd6885e4f3a40c2') in 0.661998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Resources/Monsters/2_Satyr.prefab
+  artifactKey: Guid(80c8f5610aa4c5b4b884a227c87dfa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Monsters/2_Satyr.prefab using Guid(80c8f5610aa4c5b4b884a227c87dfa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74d59bbb78b61b0b5696663b1d722e57') in 0.252353 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002678 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.394 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1394ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1080ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (370ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (491ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (327ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.5 KB). Loaded Objects now: 4440.
+Memory consumption went from 236.6 MB to 236.4 MB.
+Total: 4.455500 ms (FindLiveObjects: 0.431100 ms CreateObjectMapping: 0.286300 ms MarkObjects: 3.571100 ms  DeleteObjects: 0.165500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008529 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.558 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1559ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1257ms)
+			LoadAssemblies (127ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (506ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (502ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (338ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.4 KB). Loaded Objects now: 4455.
+Memory consumption went from 236.7 MB to 236.4 MB.
+Total: 3.604200 ms (FindLiveObjects: 0.456500 ms CreateObjectMapping: 0.298300 ms MarkObjects: 2.633100 ms  DeleteObjects: 0.215200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002773 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.520 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1521ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1237ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (403ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (549ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (384ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.3 KB). Loaded Objects now: 4470.
+Memory consumption went from 236.7 MB to 236.5 MB.
+Total: 6.210200 ms (FindLiveObjects: 1.277500 ms CreateObjectMapping: 0.643800 ms MarkObjects: 4.126300 ms  DeleteObjects: 0.161400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003924 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.769 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1770ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1470ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (466ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (717ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (501ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.5 KB). Loaded Objects now: 4485.
+Memory consumption went from 236.7 MB to 236.5 MB.
+Total: 5.734600 ms (FindLiveObjects: 0.854800 ms CreateObjectMapping: 1.393900 ms MarkObjects: 3.263900 ms  DeleteObjects: 0.219900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003759 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.450 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1451ms)
+		BeginReloadAssembly (170ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1155ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (435ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (493ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (343ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.4 KB). Loaded Objects now: 4500.
+Memory consumption went from 236.7 MB to 236.5 MB.
+Total: 4.227500 ms (FindLiveObjects: 0.818700 ms CreateObjectMapping: 0.520700 ms MarkObjects: 2.605100 ms  DeleteObjects: 0.281600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 197.426862 seconds.
+  path: Assets/Greek Monster Pack/Common/Meshes/Female/Female_Hair_Long.fbx
+  artifactKey: Guid(19b9c250cf8eb7e4f8ed142037f0bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Greek Monster Pack/Common/Meshes/Female/Female_Hair_Long.fbx using Guid(19b9c250cf8eb7e4f8ed142037f0bd4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65be01497fb75e9506bf2eac4c78f8d8') in 0.200511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Resources/Village_Resources/Greek_coulumn.asset
+  artifactKey: Guid(3e5edb00f0f0e5a45a71d4240b6ed4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Village_Resources/Greek_coulumn.asset using Guid(3e5edb00f0f0e5a45a71d4240b6ed4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '078ff1953f155e130016bbd89763f52f') in 0.022366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Resources/Village_Resources/Greek_divider.asset
+  artifactKey: Guid(7f79d9ce7e55b9644acab9cb166f6617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Village_Resources/Greek_divider.asset using Guid(7f79d9ce7e55b9644acab9cb166f6617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76b38b18d2e5d2ef947913fbe6d6009e') in 0.022803 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002478 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.216 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1217ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (958ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (344ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (408ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (284ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.3 KB). Loaded Objects now: 4515.
+Memory consumption went from 236.7 MB to 236.5 MB.
+Total: 6.664100 ms (FindLiveObjects: 0.669300 ms CreateObjectMapping: 0.521700 ms MarkObjects: 5.177700 ms  DeleteObjects: 0.294400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003219 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.212 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1213ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (66ms)
+		EndReloadAssembly (874ms)
+			LoadAssemblies (136ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (292ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (387ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (261ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.4 KB). Loaded Objects now: 4530.
+Memory consumption went from 236.8 MB to 236.6 MB.
+Total: 6.354200 ms (FindLiveObjects: 0.798700 ms CreateObjectMapping: 0.609700 ms MarkObjects: 4.442600 ms  DeleteObjects: 0.502100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002472 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image Z:\github\github_Theos\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.183 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1184ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (950ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (292ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (439ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (296ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3720 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (222.4 KB). Loaded Objects now: 4545.
+Memory consumption went from 236.8 MB to 236.6 MB.
+Total: 3.844100 ms (FindLiveObjects: 0.805000 ms CreateObjectMapping: 0.334300 ms MarkObjects: 2.581500 ms  DeleteObjects: 0.122200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -8,30 +8,28 @@ public class CharSpawn_labyrinth : MonoBehaviour
     public 
     Transform player;
     [SerializeField]
-    private Camera camera;    
+    private Camera camera;
+    [SerializeField]
+    private LayerMask clickMask;
     void Start()
-    {
-        if (Application.CanStreamedLevelBeLoaded(4))
-        {
-            player = Character_Manager.instance.GetComponentInChildren<Transform>();
-            Vector3 spawn = new Vector3(45f, 1f, 45f);
-            player.position = spawn;
-        }
-        camera = Camera_Manager.instance.GetComponent<Camera>();
-        RaycastHit hit;
-        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast(ray, out hit))
-        {
-            Transform objectHit = hit.transform;
-            if(objectHit == Boss)
-            {
-                Transform bossHp = UI_Manager.instance.transform.Find("BossState");
-                bossHp.gameObject.SetActive(true);
-            }
-        }
+    {        
+        
     }
     void Update()
     {
-        
+        camera = Camera_Manager.instance.GetComponent<Camera>();
+        RaycastHit hit;
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, clickMask))
+        {
+            Debug.Log(hit.point);
+            Vector3 objectHit = hit.point;
+            if (objectHit == Boss.transform.position)
+            {
+                Transform bossHp = UI_Manager.instance.transform.Find("BossState");
+                Debug.Log(bossHp.gameObject.name + "bossHp");
+                bossHp.gameObject.SetActive(true);
+            }
+        }
     }
 }

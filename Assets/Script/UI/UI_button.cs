@@ -11,6 +11,7 @@ public class UI_button : MonoBehaviour
     {
         ui.SetActive(false);
         Time.timeScale = 1f;
+        Obj_Portal.CamX = false;
     }
     public void OpenButton()
     {
@@ -20,16 +21,22 @@ public class UI_button : MonoBehaviour
     public void CheckPortal_Village()
     {
         ui.SetActive(false);
-        LoadingManager.LoadScene("_01_Village");
+        Obj_Portal.CamX = false;
+        Time.timeScale = 1f;
+        LoadingManager.LoadScene("_01_Village");        
     }
     public void CheckPortal_Forest()
     {
         ui.SetActive(false);
-        LoadingManager.LoadScene("_02_Forest");
+        Obj_Portal.CamX = false;
+        Time.timeScale = 1f;
+        LoadingManager.LoadScene("_02_Forest");          
     }
     public void CheckPortal_Labyrinth()
     {
         ui.SetActive(false);
+        Obj_Portal.CamX = false;
+        Time.timeScale = 1f;
         LoadingManager.LoadScene("_03_Labyrinth");
     }
 }

@@ -17,6 +17,7 @@ public class Spawn_Manager : MonoBehaviour
     public static float xStartpos;
     public static float zStartpos;
     Dictionary<int, CellInfo> cellDic;
+    //public Transform ParentMonster;
     void Awake()
     {
         cellDic = new Dictionary<int, CellInfo>();
@@ -28,7 +29,11 @@ public class Spawn_Manager : MonoBehaviour
         xStartpos = transform.position.x - size.x * 0.5f;
         zStartpos = transform.position.z + size.z * 0.5f;
         Initialize();
-    }    
+    }
+    void Start()
+    {
+        //SpawnAll();
+    }
     public void Initialize()
     {
         cellDic.Clear();
@@ -114,7 +119,6 @@ public class Spawn_Manager : MonoBehaviour
     }
     */
     void Update()
-    {
-        
+    {        
     }    
 }

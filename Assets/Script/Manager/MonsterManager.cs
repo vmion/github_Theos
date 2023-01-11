@@ -8,6 +8,7 @@ public class MonsterManager : MonoBehaviour
     private static MonsterManager Instance;
     public static Dictionary<string, GameObject> mobDic;
     public Transform ParentMonster;
+    public static List<Vector3> CenterList;
     Collider otherCollider;
     public static MonsterManager instance
     {
@@ -29,8 +30,7 @@ public class MonsterManager : MonoBehaviour
         mobDic.Add("사티르", tmpObjs[2]);
         mobDic.Add("아라크네", tmpObjs[3]);
         mobDic.Add("미노타우루스", tmpObjs[4]);
-        
-              
+        CenterList = new List<Vector3>();
     }
     void Start()
     {
@@ -62,27 +62,31 @@ public class MonsterManager : MonoBehaviour
         {
             int nR = i / column;
             int nC = i % column;
-            Vector3 centerPos = GetCellCenterPos(nR, nC);            
+            Vector3 centerPos = GetCellCenterPos(nR, nC);
+            CenterList.Add(centerPos);
             if (i % 3 == 0)
             {
                 GameObject mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();                
+                mob.AddComponent<Monster_ani>();
+                mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
             }
             else if (i % 3 == 1)
             {
                 GameObject mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();                
+                mob.AddComponent<Monster_ani>();
+                mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
             }
             else
             {
                 GameObject mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();                
+                mob.AddComponent<Monster_ani>();
+                mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
             }
         }
     }

@@ -9,6 +9,7 @@ public class MonsterManager : MonoBehaviour
     public static Dictionary<string, GameObject> mobDic;
     public Transform ParentMonster;
     public static List<Vector3> CenterList;
+    public static GameObject mob;
     Collider otherCollider;
     public static MonsterManager instance
     {
@@ -66,30 +67,30 @@ public class MonsterManager : MonoBehaviour
             CenterList.Add(centerPos);
             if (i % 3 == 0)
             {
-                GameObject mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
+                mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
                 mob.AddComponent<Monster_ani>();
-                mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
+                //mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
             }
             else if (i % 3 == 1)
             {
-                GameObject mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
+                mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
                 mob.AddComponent<Monster_ani>();
-                mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
+                //mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
             }
             else
             {
-                GameObject mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
+                mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
                 mob.AddComponent<Monster_ani>();
-                mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
+                //mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
             }
         }
-        CenterList.Clear();
+        //CenterList.Clear(); 
     }
     void Update()
     {

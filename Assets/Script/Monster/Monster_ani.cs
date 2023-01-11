@@ -21,6 +21,7 @@ public class Monster_ani : MonoBehaviour
     void Start()
     {
         //Debug.Log(name + "애니메이터");
+        centerDic.Clear();
     }
     void Update()
     {
@@ -33,9 +34,9 @@ public class Monster_ani : MonoBehaviour
     public static Vector3 ClampPosition(Vector3 _position)
     {
         Vector3 clampPos;
-        clampPos.x = Mathf.Clamp(_position.x, -distance.x, distance.x);
+        clampPos.x = Mathf.Clamp(_position.x, _position.x - distance.x, _position.x + distance.x);
         clampPos.y = 0f;
-        clampPos.z = Mathf.Clamp(_position.z, -distance.z, distance.z);
+        clampPos.z = Mathf.Clamp(_position.z, _position.z - distance.z, _position.z + distance.z);
         return clampPos;
     }
 }

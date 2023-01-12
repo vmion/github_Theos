@@ -60,6 +60,7 @@
     <Compile Include="Assets\Editor\_02_ForestTerrainExport.cs" />
     <Compile Include="Assets\Editor\_01_VillageTerrainExport.cs" />
     <Compile Include="Assets\Editor\_00_StartSceneTerrainExport.cs" />
+    <Compile Include="Assets\Editor\MapLoad.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

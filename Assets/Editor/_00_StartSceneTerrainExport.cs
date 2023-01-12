@@ -5,7 +5,7 @@ using UnityEditor;
 using System.IO;
 public class _00_StartSceneTerrainExport : EditorWindow
 {
-    [MenuItem("Export/_00_StartSceneTerrainExport")]
+    [MenuItem("MapData/Export/_00_StartSceneTerrainExport")]
     public static void ExportData()
     {
         Debug.Log("ExportData");
@@ -15,44 +15,40 @@ public class _00_StartSceneTerrainExport : EditorWindow
         {
             string lineData = "index,name,parent,posx,posy,posz,rotx,roty,rotz,scalex,scaley,scalez";
             sr.WriteLine(lineData);
-            GameObject[] buildings = GameObject.FindGameObjectsWithTag("Terrain");
-            for (int i = 0; i < buildings.Length; i++)
+            GameObject[] Terrains = GameObject.FindGameObjectsWithTag("Terrain");
+            for (int i = 0; i < Terrains.Length; i++)
             {
                 lineData = string.Empty;
                 lineData += (i + 1).ToString();
                 lineData += ",";
-                lineData += buildings[i].name;
+                lineData += Terrains[i].name;
                 lineData += ",";
-                if (buildings[i].transform.parent.name == "Ground")
-                    lineData += "-1";
-                else if (buildings[i].transform.parent.name == "Forest")
-                    lineData += "-1";
-                else if (buildings[i].transform.parent.name == "Labyrinth")
-                    lineData += "-1";
+                if (Terrains[i].transform.parent.name == "MapData")
+                    lineData += "-1";                
                 else
                 {
-                    lineData += TerrainList[buildings[i].transform.parent.gameObject].ToString();
+                    lineData += TerrainList[Terrains[i].transform.parent.gameObject].ToString();
                 }
                 lineData += ",";
-                lineData += buildings[i].transform.localPosition.x;
+                lineData += Terrains[i].transform.localPosition.x;
                 lineData += ",";
-                lineData += buildings[i].transform.localPosition.y;
+                lineData += Terrains[i].transform.localPosition.y;
                 lineData += ",";
-                lineData += buildings[i].transform.localPosition.z;
+                lineData += Terrains[i].transform.localPosition.z;
                 lineData += ",";
-                lineData += buildings[i].transform.eulerAngles.x;
+                lineData += Terrains[i].transform.eulerAngles.x;
                 lineData += ",";
-                lineData += buildings[i].transform.eulerAngles.y;
+                lineData += Terrains[i].transform.eulerAngles.y;
                 lineData += ",";
-                lineData += buildings[i].transform.eulerAngles.z;
+                lineData += Terrains[i].transform.eulerAngles.z;
                 lineData += ",";
-                lineData += buildings[i].transform.localScale.x;
+                lineData += Terrains[i].transform.localScale.x;
                 lineData += ",";
-                lineData += buildings[i].transform.localScale.y;
+                lineData += Terrains[i].transform.localScale.y;
                 lineData += ",";
-                lineData += buildings[i].transform.localScale.z;
+                lineData += Terrains[i].transform.localScale.z;
                 sr.WriteLine(lineData);
-                TerrainList.Add(buildings[i], i + 1);
+                TerrainList.Add(Terrains[i], i + 1);
             }
             sr.Close();
             TerrainList.Clear();

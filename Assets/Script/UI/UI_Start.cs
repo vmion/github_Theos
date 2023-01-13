@@ -7,7 +7,7 @@ public class UI_Start : MonoBehaviour
 {
     public GameObject ui;
     Char_ani Instance;
-    UI_Manager instance;
+    UI_Manager instance;    
     public void LoadScene()
     {
         LoadingManager.LoadScene("_01_Village");
@@ -31,5 +31,5 @@ public class UI_Start : MonoBehaviour
     public void Close_Exit()
     {
         ui.SetActive(false);        
-    }
+    }    
 }

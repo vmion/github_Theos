@@ -6,9 +6,9 @@ public class Monster_ani : MonoBehaviour
 {
     Animator ani;    
     Vector3 nextMove;
-    bool isMoving;
-    public GameObject player;
+    bool isMoving;    
     Vector3 Center;
+    public GameObject player;
     void Awake()
     {
         ani = GetComponent<Animator>();
@@ -17,12 +17,12 @@ public class Monster_ani : MonoBehaviour
     }
     void Start()
     {        
-        Invoke("mobMove", 3f);        
+        Invoke("AutoMove", 3f);        
     }
     void Update()
     {        
     }
-    void mobMove()
+    public void AutoMove()
     {
         isMoving = true;
         Transform movePos = GetComponent<Transform>();        
@@ -41,6 +41,6 @@ public class Monster_ani : MonoBehaviour
         }
         float time = Random.Range(2f, 5f);
         isMoving = false;        
-        Invoke("mobMove", time);
+        Invoke("AutoMove", time);
     }    
 }

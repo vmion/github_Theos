@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UI_button : MonoBehaviour
 {    
-    public GameObject ui;
+    public GameObject ui;    
     public void CloseButton()
     {
         ui.SetActive(false);
@@ -17,6 +17,7 @@ public class UI_button : MonoBehaviour
     {
         ui.SetActive(true);
         Time.timeScale = 0f;
+        Obj_Portal.CamX = true;
     }
     public void CheckPortal_Village()
     {
@@ -38,5 +39,12 @@ public class UI_button : MonoBehaviour
         Obj_Portal.CamX = false;
         Time.timeScale = 1f;
         LoadingManager.LoadScene("_03_Labyrinth");
+    }
+    public void AutoCombat()
+    {
+        ui.SetActive(false);
+        Time.timeScale = 1f;
+        Obj_Portal.CamX = false;
+        gameObject.GetComponentInChildren<Char_Auto>().AutoMove();
     }
 }

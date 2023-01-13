@@ -5,7 +5,7 @@ using UnityEngine;
 public struct CellInfo
 {
     public int arrIndex;
-    public Vector3 centerPos;
+    public Vector3 centerPos;    
 }
 public class Spawn_Manager : MonoBehaviour
 {    
@@ -16,7 +16,7 @@ public class Spawn_Manager : MonoBehaviour
     public static float cellzSize;
     public static float xStartpos;
     public static float zStartpos;
-    Dictionary<int, CellInfo> cellDic;
+    public static Dictionary<int, CellInfo> cellDic;
     //public Transform ParentMonster;
     void Awake()
     {

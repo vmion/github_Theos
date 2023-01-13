@@ -70,24 +70,21 @@ public class MonsterManager : MonoBehaviour
                 mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-                //mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
+                mob.AddComponent<Monster_ani>();               
             }
             else if (i % 3 == 1)
             {
                 mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-                //mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
+                mob.AddComponent<Monster_ani>();                
             }
             else
             {
                 mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-                //mob.transform.localPosition = Monster_ani.ClampPosition(centerPos);
+                mob.AddComponent<Monster_ani>();               
             }
         }
         //CenterList.Clear(); 

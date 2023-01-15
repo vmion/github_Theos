@@ -1,22 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CharSpawn : MonoBehaviour
 {
-    void Start()
+    string sceneName;
+    Scene nowScene;    
+    void Awake()
     {
-        if (Application.CanStreamedLevelBeLoaded(2))
-        {
-            Character_Manager.ParentPlayer.transform.position = new Vector3(-15f, 1f, 0f);
+        nowScene = SceneManager.GetActiveScene();
+        sceneName = nowScene.name;
+    }
+    void Start()
+    {        
+        if (sceneName == "_01_Village")
+        {                      
+            Character_Manager.instance.transform.position = transform.position;            
         }
-        else if (Application.CanStreamedLevelBeLoaded(3))
-        {
-            Character_Manager.ParentPlayer.transform.position = new Vector3(-60f, 1f, -20f);
+        else if (sceneName == "_02_Forest")
+        {            
+            Character_Manager.instance.transform.localPosition = transform.position;
         }
-        else if(Application.CanStreamedLevelBeLoaded(4))
-        {
-            Character_Manager.ParentPlayer.transform.position = new Vector3(45f, 1f, 45f);            
+        else if (sceneName == "_03_Labyrinth")
+        {           
+            Character_Manager.instance.transform.localPosition = transform.position;
         }
+    }
+    void Update()
+    {
+        
     }
 }

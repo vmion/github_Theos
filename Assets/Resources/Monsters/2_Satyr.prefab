@@ -1195,6 +1195,7 @@ GameObject:
   - component: {fileID: 6902909960481102264}
   - component: {fileID: 586291507410972559}
   - component: {fileID: 1502779373670406792}
+  - component: {fileID: -2431107067862119213}
   m_Layer: 0
   m_Name: 2_Satyr
   m_TagString: Monster
@@ -1455,10 +1456,28 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 4
   m_BaseOffset: 0
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!143 &-2431107067862119213
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101708600083699302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 4
+  m_Radius: 0.5
+  m_SlopeLimit: 90
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &1128737228328694244
 GameObject:
   m_ObjectHideFlags: 0

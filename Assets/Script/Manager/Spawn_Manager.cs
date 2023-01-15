@@ -21,7 +21,7 @@ public class Spawn_Manager : MonoBehaviour
     void Awake()
     {
         cellDic = new Dictionary<int, CellInfo>();
-        row = 4;
+        row = 3;
         column = 4;
         GetMapsize();
         cellxSize = size.x / (float)column;
@@ -82,42 +82,8 @@ public class Spawn_Manager : MonoBehaviour
         Vector3 worldMin = transform.TransformPoint(tmp1);
         Vector3 worldMax = transform.TransformPoint(tmp2);
         size.x = (worldMax.x - worldMin.x);
-        size.z = (worldMax.z - worldMin.z);
-        //Debug.Log(size.x + " X " + size.z + "사이즈의 맵이다.");
-    }
-    /*
-    public void SpawnAll()
-    {
-        int tileIndex = row * column; 
-        for (int i = 0; i < tileIndex; i++)
-        {
-            int nR = i / column;
-            int nC = i % column;
-            Vector3 centerPos = GetCellCenterPos(nR, nC);
-            if(i % 3 == 0)
-            {                               
-                GameObject mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
-                mob.tag = "Monster";
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();                
-            }
-            else if (i % 3 == 1)
-            {                
-                GameObject mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
-                mob.tag = "Monster";
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-            }
-            else
-            {               
-                GameObject mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
-                mob.tag = "Monster";
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-            }            
-        }
-    }
-    */
+        size.z = (worldMax.z - worldMin.z);        
+    }   
     void Update()
     {        
     }    

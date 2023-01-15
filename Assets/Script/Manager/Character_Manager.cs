@@ -34,8 +34,7 @@ public class Character_Manager : MonoBehaviour
         ParentPlayer = GameObject.Find("Player").transform;
         charDic = new Dictionary<string, GameObject>();
         GameObject[] tmpObjs = Resources.LoadAll<GameObject>("Character/");
-        charDic.Add("플레이어", tmpObjs[0]);
-        //LogIN();
+        charDic.Add("플레이어", tmpObjs[0]);        
     }
     void LogIN()
     {

@@ -5,42 +5,60 @@ using UnityEngine;
 public class Monster_ani : MonoBehaviour
 {
     Animator ani;    
-    Vector3 nextMove;
-    bool isMoving;    
+    Vector3 nextMove;       
     Vector3 Center;
     public GameObject player;
     void Awake()
     {
         ani = GetComponent<Animator>();
-        Center = transform.localPosition;
-        isMoving = false;        
+        Center = transform.position;               
     }
     void Start()
-    {        
-        Invoke("AutoMove", 3f);        
+    {
+        Invoke("AutoMove", 3f);
     }
     void Update()
-    {        
+    {
+        Vector3 MPos = transform.position;
+        MPos.x = Mathf.Clamp(MPos.x, Center.x - 8f, Center.x + 8f);
+        MPos.z = Mathf.Clamp(MPos.z, Center.z - 8f, Center.z + 8f);
+        transform.position = new Vector3(MPos.x, 0, MPos.z);
+        if((MPos.x == Center.x - 8f) || MPos.x == Center.x + 8f)
+        {
+            ani.SetBool("isMoving", false);
+        }
+        else
+        {
+            ani.SetBool("isMoving", true);
+        }
+        if ((MPos.z == Center.z - 8f) || MPos.z == Center.z + 8f)
+        {
+            ani.SetBool("isMoving", false);
+        }
+        else
+        {
+            ani.SetBool("isMoving", true);
+        }
     }
     public void AutoMove()
-    {
-        isMoving = true;
-        Transform movePos = GetComponent<Transform>();        
-        nextMove.x = (int)Random.Range(-3f, 3f);
-        nextMove.y = 0f;
+    {        
+        nextMove.x = (int)Random.Range(-3f, 3f);        
         nextMove.z = (int)Random.Range(-3f, 3f);
         Vector3 dirMove = new Vector3(nextMove.x, 0f, nextMove.z);
-        if (isMoving)
+        if (dirMove.magnitude != 0)
         {            
             ani.SetBool("isMoving", true);
-            movePos.position += dirMove * Time.deltaTime * 1f;            
-            movePos.forward = dirMove.normalized;
-            Vector3 MPos = movePos.position;
-            MPos.x = Mathf.Clamp(MPos.x, Center.x - 5f, Center.x + 5f);
-            MPos.z = Mathf.Clamp(MPos.z, Center.z - 5f, Center.z + 5f);
-        }
-        float time = Random.Range(2f, 5f);
-        isMoving = false;        
+            transform.position += dirMove * Time.deltaTime * 1f;            
+            if (dirMove != Vector3.zero)
+            {
+                transform.forward = dirMove.normalized;
+            }            
+        } 
+        else
+        {
+            ani.SetBool("isMoving", false);
+        }        
+        float time = Random.Range(2f, 5f);                
         Invoke("AutoMove", time);
     }    
 }

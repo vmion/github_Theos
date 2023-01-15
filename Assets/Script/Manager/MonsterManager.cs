@@ -86,8 +86,7 @@ public class MonsterManager : MonoBehaviour
                 mob.transform.position = centerPos;
                 mob.AddComponent<Monster_ani>();               
             }
-        }
-        //CenterList.Clear(); 
+        }        
     }
     void Update()
     {

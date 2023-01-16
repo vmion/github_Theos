@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private static GameManager Instance;
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Destroy(this.gameObject);
-        }
+        }        
     }
     IEnumerator FadeOutStart()
     {
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
             over.GetComponent<Image>().color = c;
             yield return null;
         }
-    }    
+    }   
     void Update()
     {        
         if(hp.fillAmount == 0)

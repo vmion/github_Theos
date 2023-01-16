@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class MonsterManager : MonoBehaviour
 {
     public static Collider[] monsterCollider { get; set; }     
@@ -35,7 +35,7 @@ public class MonsterManager : MonoBehaviour
     }
     void Start()
     {
-        if (Application.CanStreamedLevelBeLoaded(3))
+        if (SceneManager.GetActiveScene().name == "_02_Forest")
         {
             ForestSpawnAll();
         }        

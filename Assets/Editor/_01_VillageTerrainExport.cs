@@ -15,7 +15,7 @@ public class _01_VillageTerrainExport : EditorWindow
         {
             string lineData = "index,name,parent,posx,posy,posz,rotx,roty,rotz,scalex,scaley,scalez";
             sr.WriteLine(lineData);
-            GameObject[] Terrains = GameObject.FindGameObjectsWithTag("Terrain");
+            GameObject[] Terrains = GameObject.FindGameObjectsWithTag("Building");
             for (int i = 0; i < Terrains.Length; i++)
             {
                 lineData = string.Empty;
@@ -23,7 +23,7 @@ public class _01_VillageTerrainExport : EditorWindow
                 lineData += ",";
                 lineData += Terrains[i].name;
                 lineData += ",";
-                if (Terrains[i].transform.parent.name == "Ground")
+                if (Terrains[i].transform.parent.name == "MapData")
                     lineData += "-1";                
                 else
                 {

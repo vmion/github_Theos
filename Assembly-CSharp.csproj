@@ -118,6 +118,13 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
+    <Compile Include="Assets\Script\Parser\ParserBase.cs" />
+    <Compile Include="Assets\Script\Parser\_01_MapDataParser.cs" />
+    <Compile Include="Assets\Script\Parser\_02_MapDataParser.cs" />
+    <Compile Include="Assets\Script\Parser\_03_MapDataParser.cs" />
+    <Compile Include="Assets\Script\Parser\_01_Parser.cs" />
+    <Compile Include="Assets\Script\Parser\_02_Parser.cs" />
+    <Compile Include="Assets\Script\Parser\_03_Parser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

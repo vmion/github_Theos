@@ -50,7 +50,7 @@ public class MonsterManager : MonoBehaviour
         float zStartpos = Spawn_Manager.zStartpos;
         Vector3 pos = Vector3.zero;
         pos.x = xStartpos + cellxSize * _c + cellxSize * 0.5f;
-        pos.y = 1f;
+        pos.y = 0f;
         pos.z = zStartpos - cellzSize * _r - cellzSize * 0.5f;
         return pos;        
     }

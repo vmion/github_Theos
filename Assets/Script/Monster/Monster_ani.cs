@@ -22,7 +22,7 @@ public class Monster_ani : MonoBehaviour
         Vector3 MPos = transform.position;
         MPos.x = Mathf.Clamp(MPos.x, Center.x - 8f, Center.x + 8f);
         MPos.z = Mathf.Clamp(MPos.z, Center.z - 8f, Center.z + 8f);
-        transform.position = new Vector3(MPos.x, 0, MPos.z);
+        transform.position = new Vector3(MPos.x, 0f, MPos.z);
         if((MPos.x == Center.x - 8f) || MPos.x == Center.x + 8f)
         {
             ani.SetBool("isMoving", false);

@@ -42,8 +42,7 @@ public class Camera_Manager : MonoBehaviour
         }
         else
         {
-            xmove += Input.GetAxis("Mouse X");
-            //ymove -= Input.GetAxis("Mouse Y");
+            xmove += Input.GetAxis("Mouse X");            
             ymove = 6f;
             transform.rotation = Quaternion.Euler(ymove, xmove, 0);
             Vector3 reverseDistance = new Vector3(0.0f, -2f, distance);

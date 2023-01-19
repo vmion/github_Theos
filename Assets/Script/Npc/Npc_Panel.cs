@@ -1,32 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Npc_Panel : MonoBehaviour
 {    
-    BoxCollider collider;
+    Collider NpcCollider;
     public GameObject panel;    
-    public BoxCollider Char;
-    public bool COLLISIONCHECK { get; set; }
-    void Awake()
+    Collider Player;
+    public bool COLLISIONCHECK { get; set; }    
+    void Start()
     {
-        collider = GetComponent<BoxCollider>();
+        NpcCollider = GetComponent<Collider>();
+        Player = Character_Manager.playerCollider;
         COLLISIONCHECK = true;
     }
-
     void Update()
     {
-        if(COLLISIONCHECK)
+        if (COLLISIONCHECK)
         {
-            if(collider.bounds.Intersects(Char.bounds))
+            if (NpcCollider.bounds.Intersects(Player.bounds))
             {
                 panel.SetActive(true);
+                Obj_Portal.CamX = true;
             }
             else
             {
                 panel.SetActive(false);
+                Obj_Portal.CamX = false;
             }
-        }        
-    }
+        }
+    }    
 }

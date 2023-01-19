@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Monster_ani : MonoBehaviour
 {
-    Animator ani;    
+    Animator Mani;    
     Vector3 nextMove;       
     Vector3 Center;
-    public GameObject player;
+    public GameObject player;    
     void Awake()
     {
-        ani = GetComponent<Animator>();
+        Mani = GetComponent<Animator>();
         Center = transform.position;               
     }
     void Start()
@@ -25,19 +25,19 @@ public class Monster_ani : MonoBehaviour
         transform.position = new Vector3(MPos.x, 0f, MPos.z);
         if((MPos.x == Center.x - 8f) || MPos.x == Center.x + 8f)
         {
-            ani.SetBool("isMoving", false);
+            Mani.SetBool("isMoving", false);
         }
         else
         {
-            ani.SetBool("isMoving", true);
+            Mani.SetBool("isMoving", true);
         }
         if ((MPos.z == Center.z - 8f) || MPos.z == Center.z + 8f)
         {
-            ani.SetBool("isMoving", false);
+            Mani.SetBool("isMoving", false);
         }
         else
         {
-            ani.SetBool("isMoving", true);
+            Mani.SetBool("isMoving", true);
         }
     }
     public void AutoMove()
@@ -46,8 +46,8 @@ public class Monster_ani : MonoBehaviour
         nextMove.z = (int)Random.Range(-3f, 3f);
         Vector3 dirMove = new Vector3(nextMove.x, 0f, nextMove.z);
         if (dirMove.magnitude != 0)
-        {            
-            ani.SetBool("isMoving", true);
+        {
+            Mani.SetBool("isMoving", true);
             transform.position += dirMove * Time.deltaTime * 1f;            
             if (dirMove != Vector3.zero)
             {
@@ -56,7 +56,7 @@ public class Monster_ani : MonoBehaviour
         } 
         else
         {
-            ani.SetBool("isMoving", false);
+            Mani.SetBool("isMoving", false);
         }        
         float time = Random.Range(2f, 5f);                
         Invoke("AutoMove", time);

@@ -16,8 +16,7 @@ public class Spawn_Manager : MonoBehaviour
     public static float cellzSize;
     public static float xStartpos;
     public static float zStartpos;
-    public static Dictionary<int, CellInfo> cellDic;
-    //public Transform ParentMonster;
+    public static Dictionary<int, CellInfo> cellDic;      
     void Awake()
     {
         cellDic = new Dictionary<int, CellInfo>();
@@ -28,11 +27,10 @@ public class Spawn_Manager : MonoBehaviour
         cellzSize = size.z / (float)row;
         xStartpos = transform.position.x - size.x * 0.5f;
         zStartpos = transform.position.z + size.z * 0.5f;
-        Initialize();
+        Initialize();        
     }
     void Start()
-    {
-        //SpawnAll();
+    {        
     }
     public void Initialize()
     {
@@ -83,7 +81,7 @@ public class Spawn_Manager : MonoBehaviour
         Vector3 worldMax = transform.TransformPoint(tmp2);
         size.x = (worldMax.x - worldMin.x);
         size.z = (worldMax.z - worldMin.z);        
-    }   
+    }    
     void Update()
     {        
     }    

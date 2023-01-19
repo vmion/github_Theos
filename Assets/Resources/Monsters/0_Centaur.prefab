@@ -14203,7 +14203,6 @@ GameObject:
   - component: {fileID: 704192298540820518}
   - component: {fileID: 8596076612637215907}
   - component: {fileID: 3416612823524229320}
-  - component: {fileID: 8358650340261750413}
   m_Layer: 0
   m_Name: 0_Centaur
   m_TagString: Monster
@@ -14231,7 +14230,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &8694711878184717801
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14248,7 +14247,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &8694711878184717800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14464,24 +14463,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
---- !u!143 &8358650340261750413
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8596076612637215906}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 4
-  m_Radius: 1
-  m_SlopeLimit: 90
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.15
-  m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &8625703787111074900
 GameObject:
   m_ObjectHideFlags: 0

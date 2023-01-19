@@ -10,7 +10,7 @@ public class MonsterManager : MonoBehaviour
     public Transform ParentMonster;
     public static List<Vector3> CenterList;
     public static GameObject mob;
-    Collider otherCollider;
+    Collider otherCollider;    
     public static MonsterManager instance
     {
         get
@@ -31,7 +31,7 @@ public class MonsterManager : MonoBehaviour
         mobDic.Add("사티르", tmpObjs[2]);
         mobDic.Add("아라크네", tmpObjs[3]);
         mobDic.Add("미노타우루스", tmpObjs[4]);
-        CenterList = new List<Vector3>();
+        CenterList = new List<Vector3>();        
     }
     void Start()
     {
@@ -49,9 +49,9 @@ public class MonsterManager : MonoBehaviour
         float xStartpos = Spawn_Manager.xStartpos;
         float zStartpos = Spawn_Manager.zStartpos;
         Vector3 pos = Vector3.zero;
-        pos.x = xStartpos + cellxSize * _c + cellxSize * 0.5f;
+        pos.x = xStartpos + (cellxSize * _c) + cellxSize * 0.5f;
         pos.y = 0f;
-        pos.z = zStartpos - cellzSize * _r - cellzSize * 0.5f;
+        pos.z = zStartpos - (cellzSize * _r) - cellzSize * 0.5f;        
         return pos;        
     }
     public void ForestSpawnAll()
@@ -63,33 +63,33 @@ public class MonsterManager : MonoBehaviour
         {
             int nR = i / column;
             int nC = i % column;
-            Vector3 centerPos = GetCellCenterPos(nR, nC);
+            Vector3 centerPos = GetCellCenterPos(nR, nC);            
             CenterList.Add(centerPos);
             if (i % 3 == 0)
             {
-                mob = Instantiate(MonsterManager.mobDic["켄타우로스"], ParentMonster);
+                mob = Instantiate(mobDic["켄타우로스"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();               
+                mob.AddComponent<Monster_ani>();              
             }
             else if (i % 3 == 1)
             {
-                mob = Instantiate(MonsterManager.mobDic["고르곤"], ParentMonster);
+                mob = Instantiate(mobDic["고르곤"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
                 mob.AddComponent<Monster_ani>();                
             }
             else
             {
-                mob = Instantiate(MonsterManager.mobDic["사티르"], ParentMonster);
+                mob = Instantiate(mobDic["사티르"], ParentMonster);
                 mob.tag = "Monster";
                 mob.transform.position = centerPos;
                 mob.AddComponent<Monster_ani>();               
-            }
+            }            
         }        
     }
     void Update()
-    {
+    {        
         /*
         for(int i = 0; i < monsterCollider.Length; i++)
         {

@@ -27,18 +27,19 @@ public class UI_button : MonoBehaviour
         LoadingManager.LoadScene("_01_Village");        
     }
     public void CheckPortal_Forest()
-    {
-        ui.SetActive(false);
+    {        
         Obj_Portal.CamX = false;
         Time.timeScale = 1f;
-        LoadingManager.LoadScene("_02_Forest");          
+        LoadingManager.LoadScene("_02_Forest");
+        ui.SetActive(false);
     }
     public void CheckPortal_Labyrinth()
     {
-        ui.SetActive(false);
+        
         Obj_Portal.CamX = false;
         Time.timeScale = 1f;
         LoadingManager.LoadScene("_03_Labyrinth");
+        ui.SetActive(false);
     }
     public void AutoCombat()
     {

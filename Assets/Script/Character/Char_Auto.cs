@@ -10,11 +10,12 @@ public class Char_Auto : MonoBehaviour
     Vector3 nextMove;    
     Vector3 Center;
     GameObject[] mobs;
+    private TextMesh GtextMesh;
     void Awake()
     {
         Char = Character_Manager.instance.transform.GetChild(0);
-        ani = Char.GetComponent<Animator>();
-    }
+        ani = Char.GetComponent<Animator>();    
+    }    
     public void AutoMove()
     {
         if(GameObject.FindGameObjectsWithTag("Monster") != null)
@@ -38,10 +39,6 @@ public class Char_Auto : MonoBehaviour
             }
             float time = Random.Range(2f, 5f);            
             Invoke("AutoMove", time);
-        }
-        else 
-        {
-            Debug.Log("주변에 몬스터가 없습니다.");
-        }
-    }   
+        }        
+    }       
 }

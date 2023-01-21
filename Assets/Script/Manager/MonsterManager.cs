@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MonsterManager : MonoBehaviour
-{
-    public static Collider[] monsterCollider { get; set; }     
+{       
     private static MonsterManager Instance;
     public static Dictionary<string, GameObject> mobDic;
     public Transform ParentMonster;
     public static List<Vector3> CenterList;
     public static GameObject mob;
-    Collider otherCollider;    
     public static MonsterManager instance
     {
         get
@@ -38,9 +36,7 @@ public class MonsterManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "_02_Forest")
         {
             ForestSpawnAll();
-        }        
-        monsterCollider = GetComponentsInChildren<Collider>();
-        otherCollider = Character_Manager.playerCollider;
+        }
     }
     public Vector3 GetCellCenterPos(int _r, int _c)
     {
@@ -69,22 +65,28 @@ public class MonsterManager : MonoBehaviour
             {
                 mob = Instantiate(mobDic["켄타우로스"], ParentMonster);
                 mob.tag = "Monster";
+                mob.name = "켄타우로스";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();              
+                mob.AddComponent<Monster_ani>();
+                mob.AddComponent<Monster_Bounds>();
             }
             else if (i % 3 == 1)
             {
                 mob = Instantiate(mobDic["고르곤"], ParentMonster);
                 mob.tag = "Monster";
+                mob.name = "고르곤";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();                
+                mob.AddComponent<Monster_ani>();
+                mob.AddComponent<Monster_Bounds>();
             }
             else
             {
                 mob = Instantiate(mobDic["사티르"], ParentMonster);
                 mob.tag = "Monster";
+                mob.name = "사티르";
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();               
+                mob.AddComponent<Monster_ani>();
+                mob.AddComponent<Monster_Bounds>();
             }            
         }        
     }

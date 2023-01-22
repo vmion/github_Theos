@@ -7672,7 +7672,7 @@ GameObject:
   - component: {fileID: 702180000663776660}
   - component: {fileID: 702180000663776666}
   - component: {fileID: 8916179220161439769}
-  - component: {fileID: 7409721661243037789}
+  - component: {fileID: 536381977261888854}
   m_Layer: 0
   m_Name: 3_HalfSpider
   m_TagString: Untagged
@@ -7979,8 +7979,8 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
---- !u!143 &7409721661243037789
-CharacterController:
+--- !u!64 &536381977261888854
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7989,14 +7989,10 @@ CharacterController:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 4.5
-  m_Radius: 2
-  m_SlopeLimit: 90
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0.5, z: 0}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5673117758631265011, guid: ba1ed0efc2b19ab4a8736c9a4c8347f8, type: 3}
 --- !u!1 &5086467434466472661
 GameObject:
   m_ObjectHideFlags: 0

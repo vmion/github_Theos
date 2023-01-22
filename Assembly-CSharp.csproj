@@ -62,8 +62,7 @@
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Animation\AnimationClipRecord.cs" />
     <Compile Include="Assets\Script\UI\UI_Loading.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Animation\SimpleHeadTrack.cs" />
-    <Compile Include="Assets\Script\Character\CharSpawn.cs" />
-    <Compile Include="Assets\Script\UI\UI_skill.cs" />
+    <Compile Include="Assets\Script\UI\UI_Skill.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\EyeMaterialProfile.cs" />
     <Compile Include="Assets\Script\Object\Obj_Portal.cs" />
     <Compile Include="Assets\Script\Character\Char_ani.cs" />
@@ -151,6 +150,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Shaders\ScenenameShader.shader" />
     <None Include="Assets\Shaders\MultiVertex.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>

@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class Character_Manager : MonoBehaviour
 {
     public static Collider playerCollider { get; set; }      
     private static Character_Manager Instance;
     public static Dictionary<string, GameObject> charDic;
-    public static Transform ParentPlayer;    
-    //public static Collider collider;
+    public static Transform ParentPlayer;
+    public GameObject SceneName;
+    Color BackGround;
     public static Character_Manager instance
     {
         get
@@ -35,37 +37,55 @@ public class Character_Manager : MonoBehaviour
         charDic = new Dictionary<string, GameObject>();
         GameObject[] tmpObjs = Resources.LoadAll<GameObject>("Character/");
         charDic.Add("플레이어", tmpObjs[0]);
-
+        //SceneName = GameObject.Find("sceneName");
         SceneManager.sceneLoaded += ChangeSceneEvent;
     }
     void LogIN()
     {
-        if(!GameObject.Find("Character(Clone)"))
+        if(!GameObject.Find("Character"))
         {
             GameObject player = Instantiate(charDic["플레이어"], ParentPlayer);
             player.tag = "Player";
+            player.name = "Character";
             player.transform.position = ParentPlayer.transform.position;
         }        
     }
     void ChangeSceneEvent(Scene _scene, LoadSceneMode _mode)
     {               
         if (_scene.name == "_01_Village")
-        {
-            Instance.transform.position = new Vector3(-15, 0, 0);
+        {            
+            instance.transform.position = new Vector3(-15, 0, 0);
+            SceneName.SetActive(true);
+            Text sceneText = SceneName.GetComponentInChildren<Text>();
+            sceneText.text = "크레타의 마을";
+            Invoke("FalseActive", 2f);
         }
         if (_scene.name == "_02_Forest")
         {
-            Instance.transform.position = new Vector3(-40, 0, -15);
+            SceneName.SetActive(true);
+            Text sceneText = SceneName.GetComponentInChildren<Text>();
+            sceneText.text = "깊은 숲";
+            Invoke("FalseActive", 2f);
         }
         if (_scene.name == "_03_Labyrinth")
         {
-            Instance.transform.position = new Vector3(-45, 0, 45);
+            SceneName.SetActive(true);
+            Text sceneText = SceneName.GetComponentInChildren<Text>();
+            sceneText.text = "크레타의 미궁";
+            Invoke("FalseActive", 2f);
+        }        
+    }
+    void FalseActive()
+    {
+        GameObject _obj = SceneName;
+        if (_obj.activeSelf == true)
+        {
+            _obj.SetActive(false);
         }        
     }
     void Start()
     {        
         LogIN();     
-        playerCollider = Instance.GetComponentInChildren<Collider>();
-        Debug.Log("manager = " + playerCollider.gameObject.name);        
+        playerCollider = Instance.GetComponentInChildren<Collider>();               
     }    
 }

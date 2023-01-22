@@ -1,16 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class UI_Skill : MonoBehaviour
 {
-    void Start()
+    public Image Skill;
+    public Image SkillBack;
+    public void InputSkill()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        Skill.gameObject.SetActive(true);
+        SkillBack.gameObject.SetActive(true);
     }
 }

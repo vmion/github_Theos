@@ -8,23 +8,23 @@ public class UI_button : MonoBehaviour
 {    
     public GameObject ui;    
     public void CloseButton()
-    {
-        ui.SetActive(false);
+    {        
         Time.timeScale = 1f;
         Obj_Portal.CamX = false;
+        ui.SetActive(false);
     }
     public void OpenButton()
-    {
-        ui.SetActive(true);
+    {        
         Time.timeScale = 0f;
         Obj_Portal.CamX = true;
+        ui.SetActive(true);
     }
     public void CheckPortal_Village()
-    {
-        ui.SetActive(false);
+    {        
         Obj_Portal.CamX = false;
         Time.timeScale = 1f;
-        LoadingManager.LoadScene("_01_Village");        
+        LoadingManager.LoadScene("_01_Village");
+        ui.SetActive(false);
     }
     public void CheckPortal_Forest()
     {        
@@ -47,5 +47,5 @@ public class UI_button : MonoBehaviour
         Time.timeScale = 1f;
         Obj_Portal.CamX = false;
         gameObject.GetComponentInChildren<Char_Auto>().AutoMove();
-    }
+    }    
 }

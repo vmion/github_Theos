@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 5752433873152316238}
   - component: {fileID: 590225678356124682}
   - component: {fileID: -6530235167089267874}
-  - component: {fileID: 8633602193124143763}
+  - component: {fileID: 6078096783716715438}
   m_Layer: 0
   m_Name: 4_Minotaur
   m_TagString: Untagged
@@ -727,8 +727,8 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
---- !u!143 &8633602193124143763
-CharacterController:
+--- !u!64 &6078096783716715438
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -737,14 +737,10 @@ CharacterController:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 4
-  m_Radius: 0.5
-  m_SlopeLimit: 90
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 2, z: 0}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 848738974752588258, guid: f6ecbc6f8f611b441a0eb1e404fae748, type: 3}
 --- !u!1 &1370212067941953358
 GameObject:
   m_ObjectHideFlags: 0

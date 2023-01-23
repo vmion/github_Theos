@@ -397,7 +397,6 @@
 "Assets/Script/MapData/_02_ForestParser.cs"
 "Assets/Script/MapData/_03_LabyrinthParser.cs"
 "Assets/Script/Monster/Monster_ani.cs"
-"Assets/Script/Monster/Monster_Bounds.cs"
 "Assets/Script/Npc/Dialogue.cs"
 "Assets/Script/Npc/DialogueManager.cs"
 "Assets/Script/Npc/InteractionEvent.cs"

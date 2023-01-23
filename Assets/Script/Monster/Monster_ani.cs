@@ -11,10 +11,10 @@ public class Monster_ani : MonoBehaviour
     void Awake()
     {
         Mani = GetComponent<Animator>();
-        Center = transform.position;               
+        Center = transform.position;        
     }
     void Start()
-    {
+    {        
         Invoke("AutoMove", 3f);
     }
     void Update()

@@ -9,6 +9,8 @@ public class MonsterManager : MonoBehaviour
     public Transform ParentMonster;
     public static List<Vector3> CenterList;
     public static GameObject mob;
+    public static List<Collider> mobColliderList { get; set; }
+    Collider player;
     public static MonsterManager instance
     {
         get
@@ -29,7 +31,8 @@ public class MonsterManager : MonoBehaviour
         mobDic.Add("사티르", tmpObjs[2]);
         mobDic.Add("아라크네", tmpObjs[3]);
         mobDic.Add("미노타우루스", tmpObjs[4]);
-        CenterList = new List<Vector3>();        
+        CenterList = new List<Vector3>();
+        mobColliderList = new List<Collider>();
     }
     void Start()
     {
@@ -37,6 +40,12 @@ public class MonsterManager : MonoBehaviour
         {
             ForestSpawnAll();
         }
+        Collider[] ChildCollider = GetComponentsInChildren<Collider>();
+        for(int i = 0; i < ChildCollider.Length; i++)
+        {
+            mobColliderList.Add(ChildCollider[i]);            
+        }
+        player = Character_Manager.playerCollider;
     }
     public Vector3 GetCellCenterPos(int _r, int _c)
     {
@@ -65,41 +74,36 @@ public class MonsterManager : MonoBehaviour
             {
                 mob = Instantiate(mobDic["켄타우로스"], ParentMonster);
                 mob.tag = "Monster";
-                mob.name = "켄타우로스";
+                mob.name = "켄타우로스" + i;
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-                mob.AddComponent<Monster_Bounds>();
+                mob.AddComponent<Monster_ani>();                
             }
             else if (i % 3 == 1)
             {
                 mob = Instantiate(mobDic["고르곤"], ParentMonster);
                 mob.tag = "Monster";
-                mob.name = "고르곤";
+                mob.name = "고르곤" + i;
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-                mob.AddComponent<Monster_Bounds>();
+                mob.AddComponent<Monster_ani>();                
             }
             else
             {
                 mob = Instantiate(mobDic["사티르"], ParentMonster);
                 mob.tag = "Monster";
-                mob.name = "사티르";
+                mob.name = "사티르" + i;
                 mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();
-                mob.AddComponent<Monster_Bounds>();
-            }            
+                mob.AddComponent<Monster_ani>();               
+            }              
         }        
     }
     void Update()
     {        
-        /*
-        for(int i = 0; i < monsterCollider.Length; i++)
+        foreach(Collider one in mobColliderList)
         {
-            if (monsterCollider[i].bounds.Intersects(otherCollider.bounds))
+            if(one.bounds.Intersects(player.bounds))
             {
-                monsterCollider[i].gameObject.SetActive(false);
+                one.gameObject.SetActive(false);
             }
-        } 
-        */
+        }
     }
 }

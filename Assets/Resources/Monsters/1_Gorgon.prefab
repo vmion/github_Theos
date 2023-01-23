@@ -8152,6 +8152,7 @@ GameObject:
   - component: {fileID: 4195365606168354197}
   - component: {fileID: 9135288846461648694}
   - component: {fileID: 6949548580300568910}
+  - component: {fileID: -967896551312161101}
   m_Layer: 0
   m_Name: 1_Gorgon
   m_TagString: Monster
@@ -8189,7 +8190,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ca8e58f372441f44c91b481f17592984, type: 3}
   m_Controller: {fileID: 22100000, guid: 54a402202920f9c4b8f90f78ad8b048c, type: 2}
-  m_CullingMode: 1
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
@@ -8419,6 +8420,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
+--- !u!65 &-967896551312161101
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8216387747335697271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8277768896490507539
 GameObject:
   m_ObjectHideFlags: 0

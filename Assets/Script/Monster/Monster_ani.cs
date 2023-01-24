@@ -7,14 +7,23 @@ public class Monster_ani : MonoBehaviour
     Animator Mani;    
     Vector3 nextMove;       
     Vector3 Center;
-    public GameObject player;    
+    Collider playerCollider;
+    Collider mobCollider;
+    Transform Mob;
+    public bool COLLISIONCHECK { get; set; }
     void Awake()
     {
         Mani = GetComponent<Animator>();
-        Center = transform.position;        
+        Center = transform.position;
+        mobCollider = GetComponent<Collider>();
+        Mob = GetComponent<Transform>();
+        playerCollider = Character_Manager.playerCollider;
     }
     void Start()
     {        
+        Debug.Log(Mob.gameObject.name);
+        Debug.Log(playerCollider.name);
+        COLLISIONCHECK = true;
         Invoke("AutoMove", 3f);
     }
     void Update()
@@ -39,6 +48,26 @@ public class Monster_ani : MonoBehaviour
         {
             Mani.SetBool("isMoving", true);
         }
+        MobActiveFalse();        
+    }
+    void MobActiveFalse()
+    {
+        if (COLLISIONCHECK)
+        {
+            if (mobCollider.bounds.Intersects(playerCollider.bounds))
+            {
+                Debug.Log("bounds");
+                Mob.gameObject.SetActive(false);
+            }
+            else
+            {
+                return;
+            }
+        }        
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("trigger");
     }
     public void AutoMove()
     {        

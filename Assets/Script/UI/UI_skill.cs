@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class UI_Skill : MonoBehaviour
+public class UI_skill : MonoBehaviour
 {
     public Image Skill;
     public Image SkillBack;

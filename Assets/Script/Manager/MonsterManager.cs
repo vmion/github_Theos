@@ -9,8 +9,8 @@ public class MonsterManager : MonoBehaviour
     public Transform ParentMonster;
     public static List<Vector3> CenterList;
     public static GameObject mob;
-    public static List<Collider> mobColliderList { get; set; }
-    Collider player;
+    bool check = true;
+
     public static MonsterManager instance
     {
         get
@@ -31,21 +31,14 @@ public class MonsterManager : MonoBehaviour
         mobDic.Add("사티르", tmpObjs[2]);
         mobDic.Add("아라크네", tmpObjs[3]);
         mobDic.Add("미노타우루스", tmpObjs[4]);
-        CenterList = new List<Vector3>();
-        mobColliderList = new List<Collider>();
+        CenterList = new List<Vector3>();        
     }
     void Start()
     {
         if (SceneManager.GetActiveScene().name == "_02_Forest")
         {
             ForestSpawnAll();
-        }
-        Collider[] ChildCollider = GetComponentsInChildren<Collider>();
-        for(int i = 0; i < ChildCollider.Length; i++)
-        {
-            mobColliderList.Add(ChildCollider[i]);            
-        }
-        player = Character_Manager.playerCollider;
+        }        
     }
     public Vector3 GetCellCenterPos(int _r, int _c)
     {
@@ -75,7 +68,7 @@ public class MonsterManager : MonoBehaviour
                 mob = Instantiate(mobDic["켄타우로스"], ParentMonster);
                 mob.tag = "Monster";
                 mob.name = "켄타우로스" + i;
-                mob.transform.position = centerPos;
+                mob.transform.position = centerPos;                
                 mob.AddComponent<Monster_ani>();                
             }
             else if (i % 3 == 1)
@@ -83,7 +76,7 @@ public class MonsterManager : MonoBehaviour
                 mob = Instantiate(mobDic["고르곤"], ParentMonster);
                 mob.tag = "Monster";
                 mob.name = "고르곤" + i;
-                mob.transform.position = centerPos;
+                mob.transform.position = centerPos;                
                 mob.AddComponent<Monster_ani>();                
             }
             else
@@ -91,19 +84,23 @@ public class MonsterManager : MonoBehaviour
                 mob = Instantiate(mobDic["사티르"], ParentMonster);
                 mob.tag = "Monster";
                 mob.name = "사티르" + i;
-                mob.transform.position = centerPos;
-                mob.AddComponent<Monster_ani>();               
-            }              
+                mob.transform.position = centerPos;                
+                mob.AddComponent<Monster_ani>();                
+            }            
         }        
+    }    
+    void Wait()
+    {
+        //yield return new WaitForSecondsRealtime(5f);
+        check = true;
     }
     void Update()
-    {        
-        foreach(Collider one in mobColliderList)
-        {
-            if(one.bounds.Intersects(player.bounds))
-            {
-                one.gameObject.SetActive(false);
-            }
-        }
+    {
+       if(transform.GetChild(0).gameObject.activeSelf == false)
+       {
+            Invoke("Wait", 5f);
+            transform.GetChild(0).gameObject.SetActive(check);
+            check = false;            
+       }
     }
 }

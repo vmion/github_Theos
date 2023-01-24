@@ -419,7 +419,7 @@
 "Assets/Script/UI/UI_joyStick.cs"
 "Assets/Script/UI/UI_Loading.cs"
 "Assets/Script/UI/UI_minimap.cs"
-"Assets/Script/UI/UI_Skill.cs"
+"Assets/Script/UI/UI_skill.cs"
 "Assets/Script/UI/UI_Start.cs"
 -langversion:9.0
 

@@ -57,24 +57,24 @@ public class Character_Manager : MonoBehaviour
             SceneName.SetActive(true);
             Text sceneText = SceneName.GetComponentInChildren<Text>();
             sceneText.text = "≈©∑π≈∏¿« ∏∂¿ª";
-            Invoke("FalseActive", 2f);
+            Invoke("SceneUIActiveFalse", 2f);
         }
         if (_scene.name == "_02_Forest")
         {
             SceneName.SetActive(true);
             Text sceneText = SceneName.GetComponentInChildren<Text>();
             sceneText.text = "±Ì¿∫ Ω£";                       
-            Invoke("FalseActive", 2f);
+            Invoke("SceneUIActiveFalse", 2f);
         }
         if (_scene.name == "_03_Labyrinth")
         {
             SceneName.SetActive(true);
             Text sceneText = SceneName.GetComponentInChildren<Text>();
             sceneText.text = "≈©∑π≈∏¿« πÃ±√";            
-            Invoke("FalseActive", 2f);
+            Invoke("SceneUIActiveFalse", 2f);
         }        
     }
-    void FalseActive()
+    void SceneUIActiveFalse()
     {
         GameObject _obj = SceneName;
         if (_obj.activeSelf == true)

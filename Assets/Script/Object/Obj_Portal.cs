@@ -26,7 +26,8 @@ public class Obj_Portal : MonoBehaviour
             }
             else
             {
-                caution.SetActive(false);                
+                caution.SetActive(false);
+                CamX = false;
             }
         }        
     }     

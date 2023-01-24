@@ -20,13 +20,11 @@ public class Npc_Panel : MonoBehaviour
         {
             if (NpcCollider.bounds.Intersects(Player.bounds))
             {
-                panel.SetActive(true);
-                Obj_Portal.CamX = true;
+                panel.SetActive(true);                
             }
             else
             {
-                panel.SetActive(false);
-                Obj_Portal.CamX = false;
+                panel.SetActive(false);                
             }
         }
     }    

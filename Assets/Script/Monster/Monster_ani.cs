@@ -23,6 +23,7 @@ public class Monster_ani : MonoBehaviour
     {        
         Debug.Log(Mob.gameObject.name);
         Debug.Log(playerCollider.name);
+        Debug.Log(mobCollider.gameObject.name);
         COLLISIONCHECK = true;
         Invoke("AutoMove", 3f);
     }
@@ -48,27 +49,24 @@ public class Monster_ani : MonoBehaviour
         {
             Mani.SetBool("isMoving", true);
         }
-        MobActiveFalse();        
+
+        if(COLLISIONCHECK)
+        {
+            MobActiveFalse();
+        }               
     }
     void MobActiveFalse()
-    {
-        if (COLLISIONCHECK)
+    {        
+        if (mobCollider.bounds.Intersects(playerCollider.bounds))
         {
-            if (mobCollider.bounds.Intersects(playerCollider.bounds))
-            {
-                Debug.Log("bounds");
-                Mob.gameObject.SetActive(false);
-            }
-            else
-            {
-                return;
-            }
-        }        
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("trigger");
-    }
+            Debug.Log("bounds");
+            //Mob.gameObject.SetActive(false);
+        }
+        else
+        {
+            return;
+        }                
+    }    
     public void AutoMove()
     {        
         nextMove.x = (int)Random.Range(-3f, 3f);        

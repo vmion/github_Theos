@@ -19,7 +19,7 @@ public class UI_Start : MonoBehaviour
     public void Logout()
     {
         ui.SetActive(false);
-        LoadingManager.LoadScene("_00_StartScene");        
+        LoadingManager.LoadScene("_00_StartScene");
     }
     public void Check_Exit()
     {

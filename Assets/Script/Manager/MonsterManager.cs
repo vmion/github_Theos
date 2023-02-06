@@ -38,7 +38,11 @@ public class MonsterManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "_02_Forest")
         {
             ForestSpawnAll();
-        }        
+        }
+        if (SceneManager.GetActiveScene().name == "_03_Labyrinth")
+        {
+            LabyrinthSpawnAll();
+        }
     }
     public Vector3 GetCellCenterPos(int _r, int _c)
     {
@@ -88,7 +92,44 @@ public class MonsterManager : MonoBehaviour
                 mob.AddComponent<Monster_ani>();                
             }            
         }        
-    }    
+    }
+    public void LabyrinthSpawnAll()
+    {
+        int row = Spawn_Manager.row;
+        int column = Spawn_Manager.column;        
+        int tileIndex = row * column;
+        for (int i = 0; i < tileIndex; i++)
+        {
+            int nR = i / column;
+            int nC = i % column;
+            Vector3 centerPos = GetCellCenterPos(nR, nC);
+            CenterList.Add(centerPos);
+            if (i % 3 == 0)
+            {
+                mob = Instantiate(mobDic["사티르"], ParentMonster);
+                mob.tag = "Monster";
+                mob.name = "사티르" + i;
+                mob.transform.position = centerPos;
+                mob.AddComponent<Monster_ani>();
+            }
+            else if (i % 3 == 1)
+            {
+                mob = Instantiate(mobDic["고르곤"], ParentMonster);
+                mob.tag = "Monster";
+                mob.name = "고르곤" + i;
+                mob.transform.position = centerPos;
+                mob.AddComponent<Monster_ani>();
+            }           
+            else
+            {
+                mob = Instantiate(mobDic["아라크네"], ParentMonster);
+                mob.tag = "Monster";
+                mob.name = "아라크네" + i;
+                mob.transform.position = centerPos;
+                mob.AddComponent<Monster_ani>();
+            }
+        }
+    }
     void Wait()
     {
         //yield return new WaitForSecondsRealtime(5f);

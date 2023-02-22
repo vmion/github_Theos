@@ -379,6 +379,7 @@
 "Assets/Script/Character/Ani_skill4.cs"
 "Assets/Script/Character/Char_ani.cs"
 "Assets/Script/Character/Char_Auto.cs"
+"Assets/Script/Character/Char_Weapon.cs"
 "Assets/Script/InstanceCheck.cs"
 "Assets/Script/Manager/Camera_Manager.cs"
 "Assets/Script/Manager/Character_Manager.cs"

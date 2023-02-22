@@ -49,23 +49,7 @@ public class Monster_ani : MonoBehaviour
         {
             Mani.SetBool("isMoving", true);
         }
-
-        if(COLLISIONCHECK)
-        {
-            MobActiveFalse();
-        }               
-    }
-    void MobActiveFalse()
-    {        
-        if (mobCollider.bounds.Intersects(playerCollider.bounds))
-        {
-            Debug.Log("bounds");
-            //Mob.gameObject.SetActive(false);
-        }
-        else
-        {
-            return;
-        }                
+                   
     }    
     public void AutoMove()
     {        

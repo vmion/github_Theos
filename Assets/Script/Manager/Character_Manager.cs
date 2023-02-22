@@ -9,7 +9,7 @@ public class Character_Manager : MonoBehaviour
     private static Character_Manager Instance;
     public static Dictionary<string, GameObject> charDic;
     public static Transform ParentPlayer;
-    public GameObject SceneName;    
+    public GameObject SceneName;  
     
     public static Character_Manager instance
     {

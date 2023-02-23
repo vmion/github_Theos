@@ -74,7 +74,6 @@
     <Compile Include="Assets\Script\Character\Ani_skill4.cs" />
     <Compile Include="Assets\Script\Parser\_02_Parser.cs" />
     <Compile Include="Assets\Script\Parser\ParserBase.cs" />
-    <Compile Include="Assets\Script\Npc\DialogueManager.cs" />
     <Compile Include="Assets\Script\UI\UI_fillamount.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill1.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\MecanimHipCorrectionProfile.cs" />
@@ -87,15 +86,14 @@
     <Compile Include="Assets\Script\Manager\Camera_Manager.cs" />
     <Compile Include="Assets\Script\MapData\_01_VillageParser.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Animation\AnimationBoneWanderCorrection.cs" />
+    <Compile Include="Assets\Script\Character\Char_Weapon.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Editor Window\AnimationClipRecorderWindow.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\SimpleClothingMaterialSelector.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\EyebrowProfile.cs" />
-    <Compile Include="Assets\Script\Npc\InteractionEvent.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\ExtremityProfile.cs" />
     <Compile Include="Assets\Script\Manager\UI_Manager.cs" />
     <Compile Include="Assets\Script\MapData\_03_LabyrinthParser.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill2.cs" />
-    <Compile Include="Assets\Script\Npc\Dialogue.cs" />
     <Compile Include="Assets\Script\UI\UI_InventorySlot.cs" />
     <Compile Include="Assets\Script\Manager\LoadingManager.cs" />
     <Compile Include="Assets\Script\Npc\Npc_Text.cs" />
@@ -110,7 +108,6 @@
     <Compile Include="Assets\Script\MapData\_00_StartSceneParser.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SetParentSettings.cs" />
     <Compile Include="Assets\Script\Parser\_01_MapDataParser.cs" />
-    <Compile Include="Assets\Script\Npc\Npc_DialogParse.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\EditorParentageManager.cs" />
     <Compile Include="Assets\Script\Manager\MonsterManager.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill3.cs" />
@@ -123,7 +120,12 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Character\Char_Weapon.cs" />
+    <Compile Include="Assets\Script\Object\Obj_Data.cs" />
+    <Compile Include="Assets\Script\Quest\QuestData.cs" />
+    <Compile Include="Assets\Script\Quest\QuestManager.cs" />
+    <Compile Include="Assets\Script\Quest\TalkManager.cs" />
+    <Compile Include="Assets\Script\Object\Obj_QuestMark.cs" />
+    <Compile Include="Assets\Script\Npc\NpcState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -859,6 +861,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{B25D67FC-5035-FAC2-06A4-E6D71CAB5C08}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

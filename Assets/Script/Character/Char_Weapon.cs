@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Char_Weapon : MonoBehaviour
 {
-    public Rigidbody weapon;
+    Rigidbody weapon;
     void Start()
     {
-        weapon = GetComponentInChildren<Rigidbody>();
+        weapon = GetComponent<Rigidbody>();
     }
 
     void Update()

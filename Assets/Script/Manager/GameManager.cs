@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour
     private static GameManager Instance;
     public bool isGameOver;
     public Image hp;
-    public GameObject over;    
+    public GameObject over;
+    public QuestManager questManager;
+    public TalkManager talkManager;
     public void Awake()
     {
         isGameOver = false;
@@ -21,6 +23,10 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }        
+    }
+    void Start()
+    {
+        questManager.CheckQuest();
     }
     IEnumerator FadeOutStart()
     {

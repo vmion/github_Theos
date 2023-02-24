@@ -397,7 +397,6 @@
 "Assets/Script/Monster/Monster_ani.cs"
 "Assets/Script/Npc/NpcState.cs"
 "Assets/Script/Npc/Npc_Panel.cs"
-"Assets/Script/Npc/Npc_Text.cs"
 "Assets/Script/Object/Obj_Data.cs"
 "Assets/Script/Object/Obj_Portal.cs"
 "Assets/Script/Object/Obj_QuestMark.cs"

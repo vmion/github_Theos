@@ -63,10 +63,13 @@
     <Compile Include="Assets\Script\UI\UI_Loading.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Animation\SimpleHeadTrack.cs" />
     <Compile Include="Assets\Script\UI\UI_skill.cs" />
+    <Compile Include="Assets\Script\Npc\NpcState.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\EyeMaterialProfile.cs" />
     <Compile Include="Assets\Script\Object\Obj_Portal.cs" />
     <Compile Include="Assets\Script\Character\Char_ani.cs" />
+    <Compile Include="Assets\Script\Object\Obj_Data.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Animation\MecanimHipCorrection.cs" />
+    <Compile Include="Assets\Script\Quest\QuestData.cs" />
     <Compile Include="Assets\Script\Manager\Character_Manager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\ExtremityManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\CreatureProfile.cs" />
@@ -77,6 +80,7 @@
     <Compile Include="Assets\Script\UI\UI_fillamount.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill1.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\MecanimHipCorrectionProfile.cs" />
+    <Compile Include="Assets\Script\Object\Obj_QuestMark.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\HairProfile.cs" />
     <Compile Include="Assets\Script\UI\UI_joyStick.cs" />
     <Compile Include="Assets\Script\Parser\_02_MapDataParser.cs" />
@@ -94,11 +98,12 @@
     <Compile Include="Assets\Script\Manager\UI_Manager.cs" />
     <Compile Include="Assets\Script\MapData\_03_LabyrinthParser.cs" />
     <Compile Include="Assets\Script\Character\Ani_skill2.cs" />
+    <Compile Include="Assets\Script\Quest\TalkManager.cs" />
     <Compile Include="Assets\Script\UI\UI_InventorySlot.cs" />
     <Compile Include="Assets\Script\Manager\LoadingManager.cs" />
-    <Compile Include="Assets\Script\Npc\Npc_Text.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\AccessoryManager.cs" />
     <Compile Include="Assets\Script\Parser\_01_Parser.cs" />
+    <Compile Include="Assets\Script\Quest\QuestManager.cs" />
     <Compile Include="Assets\Script\Parser\_03_MapDataParser.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Profiles\BeardProfile.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Common\Scripts\Appearance\ArmatureExtension.cs" />
@@ -120,12 +125,6 @@
     <Compile Include="Assets\Script\Manager\ParserManager.cs" />
     <Compile Include="Assets\DownLoadAssets\Greek Monster Pack\Demo\Scripts\SimpleCharacterCreator.cs" />
     <Compile Include="Assets\Script\UI\UI_button.cs" />
-    <Compile Include="Assets\Script\Object\Obj_Data.cs" />
-    <Compile Include="Assets\Script\Quest\QuestData.cs" />
-    <Compile Include="Assets\Script\Quest\QuestManager.cs" />
-    <Compile Include="Assets\Script\Quest\TalkManager.cs" />
-    <Compile Include="Assets\Script\Object\Obj_QuestMark.cs" />
-    <Compile Include="Assets\Script\Npc\NpcState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

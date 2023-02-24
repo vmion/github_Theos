@@ -7,7 +7,7 @@ public class QuestData : MonoBehaviour
     //퀘스트 명
     public string questName;
     // 퀘스트에 관련된 NPC id 모음
-    public int[] NpdId; 
+    public int[] NpdId;
 
 
     //생성자

@@ -2283,7 +2283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49104d2920ce574cbce077a322493f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
+  id: 2000
   isQuest: 0
   isComplete: 0
 --- !u!114 &5387835937756060105

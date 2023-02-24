@@ -7,25 +7,37 @@ public class Npc_Panel : MonoBehaviour
     Collider NpcCollider;
     public GameObject panel;    
     Collider Player;
-    public bool COLLISIONCHECK { get; set; }    
+      
     void Start()
     {
         NpcCollider = GetComponent<Collider>();
-        Player = Character_Manager.playerCollider;
-        COLLISIONCHECK = true;
+        Player = Character_Manager.playerCollider;             
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            panel.SetActive(true);
+        }        
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            panel.SetActive(false);
+        }
     }
     void Update()
     {
-        if (COLLISIONCHECK)
+        /*
+        if (NpcCollider.bounds.Intersects(Player.bounds))
         {
-            if (NpcCollider.bounds.Intersects(Player.bounds))
-            {
-                panel.SetActive(true);                
-            }
-            else
-            {
-                panel.SetActive(false);                
-            }
+            panel.SetActive(true);
         }
+        else
+        {
+            panel.SetActive(false);
+        }
+        */
     }    
 }

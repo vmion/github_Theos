@@ -7,11 +7,11 @@ public class Char_Weapon : MonoBehaviour
     Rigidbody weapon;
     void Start()
     {
-        weapon = GetComponent<Rigidbody>();
+        //weapon = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        Debug.Log(weapon.gameObject.name);
+        //Debug.Log(weapon.gameObject.name);
     }
 }

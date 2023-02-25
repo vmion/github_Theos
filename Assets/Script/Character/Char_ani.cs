@@ -29,7 +29,8 @@ public class Char_ani :  MonoBehaviour
     [SerializeField]
     private Image Skill_4;
     [SerializeField]
-    private Image Portion;    
+    private Image Portion;       
+    
     void Start()
     {
         Char = Character_Manager.instance.transform.GetChild(0);
@@ -169,11 +170,12 @@ public class Char_ani :  MonoBehaviour
             yield return new WaitForFixedUpdate();
         }
     }
+   
     void Update()
-    {
+    {        
         //LookAround();
         Move();
         ButtonSkill();
         ButtonPortion();        
-    }
+    }    
 }

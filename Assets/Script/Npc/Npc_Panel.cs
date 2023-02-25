@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Npc_Panel : MonoBehaviour
 {    
     Collider NpcCollider;
     public GameObject panel;    
     Collider Player;
+    public Text panelName;
       
     void Start()
     {
@@ -18,6 +20,7 @@ public class Npc_Panel : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             panel.SetActive(true);
+            panelName.text = " " + NpcCollider.name;
         }        
     }
     private void OnTriggerExit(Collider other)

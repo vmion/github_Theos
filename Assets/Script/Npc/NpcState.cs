@@ -30,6 +30,7 @@ public class NpcState : MonoBehaviour
         {
             objComplete.SetActive(false);
         }
+        /*
         switch(questLevel.questId)
         {
             case 10:
@@ -59,6 +60,7 @@ public class NpcState : MonoBehaviour
                 break;
            
         }
+        */
             
     }
 }

@@ -7,4 +7,5 @@ public class Obj_Data : MonoBehaviour
     public int id;
     public bool isQuest;
     public bool isComplete;
+    public bool isNPC;
 }

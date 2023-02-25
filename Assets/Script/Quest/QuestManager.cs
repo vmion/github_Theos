@@ -41,7 +41,7 @@ public class QuestManager : MonoBehaviour
         //return Quest Name
         return questList[questId].questName;
     }
-
+    
     public string CheckQuest(int id) //npc id
     {
 
